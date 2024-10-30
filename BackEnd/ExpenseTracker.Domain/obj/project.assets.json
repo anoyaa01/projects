@@ -4102,19 +4102,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\irfan.shakir\\.nuget\\packages\\": {}
+    "C:\\Users\\anoya.a\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\irfan.shakir\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Domain\\ExpenseTracker.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Domain\\ExpenseTracker.Domain.csproj",
       "projectName": "ExpenseTracker.Domain",
-      "projectPath": "C:\\Users\\irfan.shakir\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Domain\\ExpenseTracker.Domain.csproj",
-      "packagesPath": "C:\\Users\\irfan.shakir\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\irfan.shakir\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Domain\\obj\\",
+      "projectPath": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Domain\\ExpenseTracker.Domain.csproj",
+      "packagesPath": "C:\\Users\\anoya.a\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\irfan.shakir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\anoya.a\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4181,7 +4181,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

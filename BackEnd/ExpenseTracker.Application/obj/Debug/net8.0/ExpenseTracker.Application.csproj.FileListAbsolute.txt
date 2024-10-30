@@ -63,3 +63,8 @@ C:\Users\irfan.shakir\Desktop\ExpenseTrackerProject\BackEnd\ExpenseTracker.Appli
 C:\Users\irfan.shakir\Desktop\ExpenseTrackerProject\BackEnd\ExpenseTracker.Application\bin\Debug\net8.0\ExpenseTracker.Infrastructure.pdb
 C:\Users\irfan.shakir\Desktop\ExpenseTrackerProject\BackEnd\ExpenseTracker.Application\bin\Debug\net8.0\ExpenseTracker.Domain.pdb
 C:\Users\irfan.shakir\Desktop\ExpenseTrackerProject\BackEnd\ExpenseTracker.Application\obj\Debug\net8.0\ExpenseT.086D7044.Up2Date
+C:\Users\anoya.a\Desktop\ExpenseTrackerProject\BackEnd\ExpenseTracker.Application\bin\Debug\net8.0\ExpenseTracker.Domain.dll
+C:\Users\anoya.a\Desktop\ExpenseTrackerProject\BackEnd\ExpenseTracker.Application\bin\Debug\net8.0\ExpenseTracker.Infrastructure.dll
+C:\Users\anoya.a\Desktop\ExpenseTrackerProject\BackEnd\ExpenseTracker.Application\bin\Debug\net8.0\ExpenseTracker.Domain.pdb
+C:\Users\anoya.a\Desktop\ExpenseTrackerProject\BackEnd\ExpenseTracker.Application\bin\Debug\net8.0\ExpenseTracker.Infrastructure.pdb
+C:\Users\anoya.a\Desktop\ExpenseTrackerProject\BackEnd\ExpenseTracker.Application\obj\Debug\net8.0\ExpenseT.086D7044.Up2Date
