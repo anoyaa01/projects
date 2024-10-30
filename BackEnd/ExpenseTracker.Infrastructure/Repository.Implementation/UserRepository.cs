@@ -11,16 +11,16 @@ namespace ExpenseTracker.Infrastructure.Repository.Implementation
 {
     public class UserRepository : IUserRepository
     {
-        private readonly ExpenseTrackerContext context;
+        private readonly ExpenseTrackerContext _context;
 
         public UserRepository(ExpenseTrackerContext context)
         {
-            this.context = context;
+            _context = context;
         }
-        public int Add(Users user)
+        public int AddUser(Users user)
         {
-            context.Users.Add(user);
-            return context.SaveChanges();
+            _context.Users.Add(user);
+            return _context.SaveChanges();
         }
     }
 }

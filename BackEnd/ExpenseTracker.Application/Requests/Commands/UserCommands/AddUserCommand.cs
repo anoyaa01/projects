@@ -32,7 +32,7 @@ namespace ExpenseTracker.Application.Requests.Commands.UserCommands
             user.PhoneNumber = request.PhoneNumber;
             user.Password = request.Password;
 
-            int result = userRepository.Add(user);
+            int result = userRepository.AddUser(user);
             return await Task.FromResult(result);
         }
     }

@@ -1,4 +1,6 @@
 using ExpenseTracker.Infrastructure.Data;
+using ExpenseTracker.Infrastructure.Repositories;
+using ExpenseTracker.Infrastructure.Repository.Implementation;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
@@ -10,10 +12,10 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddDbContext<ExpenseTrackerContext>(x =>
  {
-     x.UseSqlServer(@"Server=localhost,1430;Database=CardManagementAPI;User Id=sa;Password=Pass@w0rd;TrustServerCertificate=true");
+     x.UseSqlServer(@"Server=localhost,1430;Database=ExpenseDB;User Id=sa;Password=Pass@w0rd;TrustServerCertificate=true");
  });
 builder.Services.AddScoped<ExpenseTrackerContext>();
 
