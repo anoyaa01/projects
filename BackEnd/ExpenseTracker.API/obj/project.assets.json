@@ -1617,6 +1617,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "ExpenseTracker.Domain": "1.0.0",
+          "MediatR": "12.4.1",
           "Microsoft.EntityFrameworkCore": "8.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.10"
         },
@@ -1631,6 +1633,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "MediatR": "12.4.1",
           "Microsoft.EntityFrameworkCore": "8.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.10"
         },
@@ -1647,6 +1650,7 @@
         "dependencies": {
           "ExpenseTracker.Application": "1.0.0",
           "ExpenseTracker.Domain": "1.0.0",
+          "MediatR": "12.4.1",
           "Microsoft.EntityFrameworkCore": "8.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.10"
         },
@@ -4598,19 +4602,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\anoya.a\\.nuget\\packages\\": {}
+    "C:\\Users\\irfan.shakir\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.API\\ExpenseTracker.API.csproj",
+      "projectUniqueName": "C:\\Users\\irfan.shakir\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.API\\ExpenseTracker.API.csproj",
       "projectName": "ExpenseTracker.API",
-      "projectPath": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.API\\ExpenseTracker.API.csproj",
-      "packagesPath": "C:\\Users\\anoya.a\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.API\\obj\\",
+      "projectPath": "C:\\Users\\irfan.shakir\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.API\\ExpenseTracker.API.csproj",
+      "packagesPath": "C:\\Users\\irfan.shakir\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\irfan.shakir\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\anoya.a\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\irfan.shakir\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4625,8 +4629,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\ExpenseTracker.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\ExpenseTracker.Infrastructure.csproj"
+            "C:\\Users\\irfan.shakir\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\ExpenseTracker.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\irfan.shakir\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\ExpenseTracker.Infrastructure.csproj"
             }
           }
         }
@@ -4688,7 +4692,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

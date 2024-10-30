@@ -13,7 +13,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<ExpenseTrackerContext>(x =>
  {
-     x.UseSqlServer(@"Server=localhost,1405;Database=ExpenseDB;User Id=sa;Password=AAaa@123;TrustServerCertificate=true");
+     x.UseSqlServer(@"Server=localhost,1430;Database=CardManagementAPI;User Id=sa;Password=Pass@w0rd;TrustServerCertificate=true");
  });
 builder.Services.AddScoped<ExpenseTrackerContext>();
 
