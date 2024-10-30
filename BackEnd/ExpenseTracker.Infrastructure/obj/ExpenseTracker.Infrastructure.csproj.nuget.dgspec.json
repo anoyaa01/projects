@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\anoya.a\\Desktop\\ExpenseTracker\\BackEnd\\ExpenseTracker.Infrastructure\\ExpenseTracker.Infrastructure.csproj": {}
+    "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\ExpenseTracker.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\anoya.a\\Desktop\\ExpenseTracker\\BackEnd\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj": {
+    "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anoya.a\\Desktop\\ExpenseTracker\\BackEnd\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj",
+        "projectUniqueName": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj",
         "projectName": "ExpenseTracker.Application",
-        "projectPath": "C:\\Users\\anoya.a\\Desktop\\ExpenseTracker\\BackEnd\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj",
+        "projectPath": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj",
         "packagesPath": "C:\\Users\\anoya.a\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anoya.a\\Desktop\\ExpenseTracker\\BackEnd\\ExpenseTracker.Application\\obj\\",
+        "outputPath": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\anoya.a\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -81,14 +81,14 @@
         }
       }
     },
-    "C:\\Users\\anoya.a\\Desktop\\ExpenseTracker\\BackEnd\\ExpenseTracker.Domain\\ExpenseTracker.Domain.csproj": {
+    "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Domain\\ExpenseTracker.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anoya.a\\Desktop\\ExpenseTracker\\BackEnd\\ExpenseTracker.Domain\\ExpenseTracker.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Domain\\ExpenseTracker.Domain.csproj",
         "projectName": "ExpenseTracker.Domain",
-        "projectPath": "C:\\Users\\anoya.a\\Desktop\\ExpenseTracker\\BackEnd\\ExpenseTracker.Domain\\ExpenseTracker.Domain.csproj",
+        "projectPath": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Domain\\ExpenseTracker.Domain.csproj",
         "packagesPath": "C:\\Users\\anoya.a\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anoya.a\\Desktop\\ExpenseTracker\\BackEnd\\ExpenseTracker.Domain\\obj\\",
+        "outputPath": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\anoya.a\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -158,14 +158,14 @@
         }
       }
     },
-    "C:\\Users\\anoya.a\\Desktop\\ExpenseTracker\\BackEnd\\ExpenseTracker.Infrastructure\\ExpenseTracker.Infrastructure.csproj": {
+    "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\ExpenseTracker.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anoya.a\\Desktop\\ExpenseTracker\\BackEnd\\ExpenseTracker.Infrastructure\\ExpenseTracker.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\ExpenseTracker.Infrastructure.csproj",
         "projectName": "ExpenseTracker.Infrastructure",
-        "projectPath": "C:\\Users\\anoya.a\\Desktop\\ExpenseTracker\\BackEnd\\ExpenseTracker.Infrastructure\\ExpenseTracker.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\ExpenseTracker.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\anoya.a\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anoya.a\\Desktop\\ExpenseTracker\\BackEnd\\ExpenseTracker.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\anoya.a\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -183,11 +183,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\anoya.a\\Desktop\\ExpenseTracker\\BackEnd\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj": {
-                "projectPath": "C:\\Users\\anoya.a\\Desktop\\ExpenseTracker\\BackEnd\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj"
+              "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj": {
+                "projectPath": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj"
               },
-              "C:\\Users\\anoya.a\\Desktop\\ExpenseTracker\\BackEnd\\ExpenseTracker.Domain\\ExpenseTracker.Domain.csproj": {
-                "projectPath": "C:\\Users\\anoya.a\\Desktop\\ExpenseTracker\\BackEnd\\ExpenseTracker.Domain\\ExpenseTracker.Domain.csproj"
+              "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Domain\\ExpenseTracker.Domain.csproj": {
+                "projectPath": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Domain\\ExpenseTracker.Domain.csproj"
               }
             }
           }

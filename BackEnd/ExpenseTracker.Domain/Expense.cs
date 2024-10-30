@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,10 @@ namespace ExpenseTracker.Domain
  
     public class Expense
     {
-        public int Id { get; set; }   
+        public int Id { get; set; }
+
+        [DataType(DataType.Date)]
+        [Column(TypeName ="Date")]
         public DateTime Date { get; set; }
         public double Amount { get; set; }
         public string Description { get; set; }

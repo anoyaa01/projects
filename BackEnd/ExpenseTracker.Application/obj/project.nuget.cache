@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gikmCv7fvT0=",
+  "dgSpecHash": "RyM3w4t1yVg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\anoya.a\\Desktop\\ExpenseTracker\\BackEnd\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj",
+  "projectFilePath": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\anoya.a\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\anoya.a\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
