@@ -3,6 +3,7 @@ import { IRegister } from '../i-register.interface';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
+import { CustomerServiceService } from '../customer-service.service';
 
 
 @Component({
@@ -21,7 +22,7 @@ export class SignupPageComponent {
 /**
  *
  */
-constructor(private http:HttpClient) { }
+constructor(private customerService:CustomerServiceService) { }
 
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
@@ -29,7 +30,7 @@ constructor(private http:HttpClient) { }
     this.RegisterUser = new FormGroup<IRegister>
       ({
         Name: new FormControl('', Validators.required),
-        Phone: new FormControl('', [Validators.required, Validators.pattern('^[0-9]{10}$')]),
+        PhoneNumber: new FormControl('', [Validators.required, Validators.pattern('^[0-9]{10}$')]),
         Password: new FormControl('', [Validators.required, Validators.minLength(8)]),
         Cpassword: new FormControl('', [Validators.required, Validators.minLength(8)])
       });
@@ -37,24 +38,27 @@ constructor(private http:HttpClient) { }
   AddNewUser() {
     this.registerSubmitted = true;
     if (this.RegisterUser.valid) {
-      console.log("User registered successfully");
-      const addNewUser = {
+      console.log("button clicked");
+      const newUser = {
         Name: this.RegisterUser.value.Name,
-        Phone: this.RegisterUser.value.Phone,
+        PhoneNumber: this.RegisterUser.value.PhoneNumber,
         Password: this.RegisterUser.value.Password,
       }
+      // console.log(newUser.Phone);
+      // console.log(newUser.Name);
+      this.customerService.submitNewUser(newUser);
 
-      this.http.post('http://localhost:5277/api/Users',addNewUser)
-      .subscribe({
-        next:(value)=>
-        {
-          console.log(value);
-          this.RegisterUser.reset();
-        },
-        error: (err) => {
-          console.error('Registration error:', err);
-        }
-      })
+      // this.http.post('http://localhost:5277/api/Users',addNewUser)
+      // .subscribe({
+      //   next:(value)=>
+      //   {
+      //     console.log(value);
+      //     this.RegisterUser.reset();
+      //   },
+      //   error: (err) => {
+      //     console.error('Registration error:', err);
+      //   }
+      // })
     }
   }
 }
