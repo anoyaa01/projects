@@ -25,32 +25,32 @@
                         Sign Up by filling up the following credentials
                     </p>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control place-color" formControlName="Name" id="floatingInputName" placeholder="Name">
-                            <div *ngIf="RegisterUser.get('Name')?.invalid && registerSubmitted">Name can't be Empty/Invalid </div>
+                        <input type="text" class="form-control place-color" formControlName="name" id="floatingInputName" placeholder="Name">
+                            <div *ngIf="RegisterUser.get('name')?.invalid && registerSubmitted">Name can't be Empty/Invalid </div>
                             <label for="floatingInputName">
                             <i class="fa-solid fa-user"></i>
                             Name
                         </label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="number" class="form-control place-color" formControlName="PhoneNumber" id="floatingInputPhone" placeholder="PhoneNumber">
-                        <div *ngIf="RegisterUser.get('PhoneNumber')?.invalid && registerSubmitted">Phone number can't be Invalid </div>
+                        <input type="text" class="form-control place-color" formControlName="phoneNumber" id="floatingInputPhone" placeholder="PhoneNumber">
+                        <div *ngIf="RegisterUser.get('phoneNumber')?.invalid && registerSubmitted">Phone number can't be Invalid </div>
                         <label for="floatingInputPhone">
                             <i class="fa-solid fa-phone"></i>
                             Phone Number
                         </label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="password" class="form-control place-color" formControlName="Password" id="floatingRegPassword" placeholder="Password">
-                            <div *ngIf="RegisterUser.get('Password')?.invalid && registerSubmitted"> Min. length should be 8 characters </div>
+                        <input type="password" class="form-control place-color" formControlName="password" id="floatingRegPassword" placeholder="Password">
+                            <div *ngIf="RegisterUser.get('password')?.invalid && registerSubmitted"> Min. length should be 8 characters </div>
                             <label for="floatingRegPassword">
                             <i class="flex-nowrap fa-solid fa-lock"> </i>
                             Password
                         </label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="password" class="form-control place-color" formControlName="Cpassword" id="floatingCPassword" placeholder="ConfirmPassword">
-                        <div *ngIf="(RegisterUser.get('Cpassword')?.value !== RegisterUser.get('Password')?.value)&& registerSubmitted "> Passwords do not match </div>
+                        <input type="password" class="form-control place-color" formControlName="cPassword" id="floatingCPassword" placeholder="ConfirmPassword">
+                        <div *ngIf="(RegisterUser.get('cPassword')?.value !== RegisterUser.get('password')?.value)&& registerSubmitted "> Passwords do not match </div>
                         <label for="floatingCPassword">
                             <i class="flex-nowrap fa-solid fa-lock"> </i>
                             Confirm Password

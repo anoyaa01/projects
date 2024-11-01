@@ -3,18 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\irfan.shakir\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\irfan.shakir\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\queries\\getexpensequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\irfan.shakir\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\dtos\\expensedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3990A1A5-4684-42CE-A2BC-0D09481868C5}|ExpenseTracker.API.csproj|c:\\users\\irfan.shakir\\desktop\\expensetrackerproject\\backend\\expensetracker.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3990A1A5-4684-42CE-A2BC-0D09481868C5}|ExpenseTracker.API.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3990A1A5-4684-42CE-A2BC-0D09481868C5}|ExpenseTracker.API.csproj|c:\\users\\irfan.shakir\\desktop\\expensetrackerproject\\backend\\expensetracker.api\\controllers\\expensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3990A1A5-4684-42CE-A2BC-0D09481868C5}|ExpenseTracker.API.csproj|solutionrelative:controllers\\expensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3990A1A5-4684-42CE-A2BC-0D09481868C5}|ExpenseTracker.API.csproj|c:\\users\\irfan.shakir\\desktop\\expensetrackerproject\\backend\\expensetracker.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3990A1A5-4684-42CE-A2BC-0D09481868C5}|ExpenseTracker.API.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\irfan.shakir\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\queries\\getexpensequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\irfan.shakir\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\queries\\getcategoriesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -23,14 +20,17 @@
       "AbsoluteMoniker": "D:0:0:{75272890-D8EE-430A-81EC-A946B5B57A1D}|..\\ExpenseTracker.Infrastructure\\ExpenseTracker.Infrastructure.csproj|c:\\users\\irfan.shakir\\desktop\\expensetrackerproject\\backend\\expensetracker.infrastructure\\repositories\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3990A1A5-4684-42CE-A2BC-0D09481868C5}|ExpenseTracker.API.csproj|c:\\users\\irfan.shakir\\desktop\\expensetrackerproject\\backend\\expensetracker.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3990A1A5-4684-42CE-A2BC-0D09481868C5}|ExpenseTracker.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\irfan.shakir\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\dtos\\expensedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{75272890-D8EE-430A-81EC-A946B5B57A1D}|..\\ExpenseTracker.Infrastructure\\ExpenseTracker.Infrastructure.csproj|c:\\users\\irfan.shakir\\desktop\\expensetrackerproject\\backend\\expensetracker.infrastructure\\repository.implementation\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75272890-D8EE-430A-81EC-A946B5B57A1D}|..\\ExpenseTracker.Infrastructure\\ExpenseTracker.Infrastructure.csproj|c:\\users\\irfan.shakir\\desktop\\expensetrackerproject\\backend\\expensetracker.infrastructure\\repository.implementation\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3990A1A5-4684-42CE-A2BC-0D09481868C5}|ExpenseTracker.API.csproj|c:\\users\\irfan.shakir\\desktop\\expensetrackerproject\\backend\\expensetracker.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3990A1A5-4684-42CE-A2BC-0D09481868C5}|ExpenseTracker.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,7 +40,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -48,7 +48,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "ExpenseController.cs",
               "DocumentMoniker": "C:\\Users\\irfan.shakir\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.API\\Controllers\\ExpenseController.cs",
               "RelativeDocumentMoniker": "Controllers\\ExpenseController.cs",
@@ -61,33 +61,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "GetExpenseQuery.cs",
               "DocumentMoniker": "C:\\Users\\irfan.shakir\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenseQuery.cs",
               "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenseQuery.cs",
               "ToolTip": "C:\\Users\\irfan.shakir\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenseQuery.cs",
               "RelativeToolTip": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenseQuery.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAgwC8AAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T08:41:35.887Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "ICategoryRepository.cs",
               "DocumentMoniker": "C:\\Users\\irfan.shakir\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Repositories\\ICategoryRepository.cs",
               "RelativeDocumentMoniker": "..\\ExpenseTracker.Infrastructure\\Repositories\\ICategoryRepository.cs",
               "ToolTip": "C:\\Users\\irfan.shakir\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Repositories\\ICategoryRepository.cs",
               "RelativeToolTip": "..\\ExpenseTracker.Infrastructure\\Repositories\\ICategoryRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T06:59:48.464Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T06:59:48.464Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "ExpenseDTO.cs",
               "DocumentMoniker": "C:\\Users\\irfan.shakir\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\DTOs\\ExpenseDTO.cs",
               "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\DTOs\\ExpenseDTO.cs",
@@ -95,12 +94,11 @@
               "RelativeToolTip": "..\\ExpenseTracker.Application\\DTOs\\ExpenseDTO.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T06:47:36.645Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T06:47:36.645Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "CategoryRepository.cs",
               "DocumentMoniker": "C:\\Users\\irfan.shakir\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Repository.Implementation\\CategoryRepository.cs",
               "RelativeDocumentMoniker": "..\\ExpenseTracker.Infrastructure\\Repository.Implementation\\CategoryRepository.cs",
@@ -108,25 +106,23 @@
               "RelativeToolTip": "..\\ExpenseTracker.Infrastructure\\Repository.Implementation\\CategoryRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T07:02:26.713Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T07:02:26.713Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "GetCategoriesQuery.cs",
               "DocumentMoniker": "C:\\Users\\irfan.shakir\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetCategoriesQuery.cs",
               "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetCategoriesQuery.cs",
               "ToolTip": "C:\\Users\\irfan.shakir\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetCategoriesQuery.cs",
               "RelativeToolTip": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetCategoriesQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T06:19:24.827Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T06:19:24.827Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\irfan.shakir\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.API\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
@@ -139,7 +135,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\irfan.shakir\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.API\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\irfan.shakir\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.API\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACQAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T06:53:28.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\irfan.shakir\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Repository.Implementation\\UserRepository.cs",
               "RelativeDocumentMoniker": "..\\ExpenseTracker.Infrastructure\\Repository.Implementation\\UserRepository.cs",
@@ -147,20 +155,7 @@
               "RelativeToolTip": "..\\ExpenseTracker.Infrastructure\\Repository.Implementation\\UserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T08:30:24.889Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\irfan.shakir\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.API\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\irfan.shakir\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.API\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T06:53:28.427Z"
+              "WhenOpened": "2024-10-30T08:30:24.889Z"
             }
           ]
         },

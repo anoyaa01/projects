@@ -11,7 +11,8 @@ export class CustomerServiceService {
   constructor(private http: HttpClient) { }
 
   submitNewUser(data: any): any {
-    // console.log("inside service");
+     console.log("inside service:");
+     console.log(data);
     this.http.post('http://localhost:5277/api/Users', data)
       .subscribe({
         next: (value) => {

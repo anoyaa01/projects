@@ -2,9 +2,9 @@ import { FormControl } from "@angular/forms";
 
 export interface IRegister 
 {
- Name:FormControl<string|null>;
- PhoneNumber:FormControl<string|null>;
- Password:FormControl<string|null>;
- Cpassword:FormControl<string|null>;
- 
+    name:FormControl<string|null>;
+    phoneNumber:FormControl<string|null>;
+    password:FormControl<string|null>;
+    cPassword:FormControl<string|null>;
 }
+
