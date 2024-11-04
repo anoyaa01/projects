@@ -1,12 +1,16 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { Route, Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ExpenseServiceService {
   
-   constructor(private http:HttpClient) { }
+   constructor(private http:HttpClient) {
+
+    }
 
   submitNewExpense(data:any):any {
       console.log(data)
@@ -24,4 +28,8 @@ export class ExpenseServiceService {
     
   }
 
+  getNewExpense(id: number): Observable<any> {
+    const params=new HttpParams().set('id',id);
+    return this.http.get(`http://localhost:5277/api/Expense`,{params}); 
+}
 }

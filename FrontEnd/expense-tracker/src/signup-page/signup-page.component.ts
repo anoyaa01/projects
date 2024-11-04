@@ -44,6 +44,7 @@ constructor(private customerService:CustomerServiceService) { }
         PhoneNumber: this.RegisterUser.value.phoneNumber,
         Password: this.RegisterUser.value.password,
       }
+      
       // console.log(newUser.Phone);
       // console.log(newUser.Name);
       this.customerService.submitNewUser(newUser);

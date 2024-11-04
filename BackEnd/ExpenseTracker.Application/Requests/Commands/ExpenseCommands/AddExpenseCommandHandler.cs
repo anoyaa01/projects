@@ -23,7 +23,7 @@ namespace ExpenseTracker.Application.Requests.Commands.ExpenseCommands
             Expense expense = new Expense();
 
             expense.User = context.Users.FirstOrDefault(x => x.Id == request.UserId);
-            expense.Date = DateTime.Now;
+            expense.Date = request.Date;
             expense.Description = string.IsNullOrEmpty(request.Description) ? "No description provided" : request.Description;
             expense.Amount = request.Amount;
 

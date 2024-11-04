@@ -13,20 +13,31 @@ import { CategoryServiceService } from '../category-service.service';
   styleUrl: './add-expense.component.scss'
 })
 export class AddExpenseComponent {
+[x: string]: any;
 
   expenseSubmitted:boolean=false;
   addExpenseDetails!: FormGroup<IExpenseInterface>;
   categoryList:string[] = [];
   UserId:number=3
+  Today: Date=new Date();
 
   constructor(private expenseService: ExpenseServiceService, private categoryService: CategoryServiceService) { }
+ 
+checkCalendar(selectedDate:Date)
+{ 
+  const Today=new Date();
+  
+if(this.Today<selectedDate)
+{
+  alert("Select current date or a past date !!");
+}
+}
+//   today: Date = new Date();
+//   dd = (this.today.getDate()).toString();
+//    mm = (this.today.getMonth() + 1).toString(); 
+//    yyyy = (this.today.getFullYear()).toString();
 
-  today: Date = new Date();
-  dd = (this.today.getDate()).toString();
-  mm = (this.today.getMonth() + 1).toString(); 
-  yyyy = (this.today.getFullYear()).toString();
-
-  shownDate = this.yyyy + '-' + this.mm + '-' + this.dd;
+//  shownDate = (this.yyyy + '-' + this.mm + '-' + this.dd);
 
   ngOnInit(): void {
     this.addExpenseDetails = new FormGroup<IExpenseInterface>
@@ -34,7 +45,7 @@ export class AddExpenseComponent {
         Amount: new FormControl(0, [Validators.required]),
         Description: new FormControl(''),
         Category: new FormControl('', Validators.required),
-        Id: new FormControl(this.UserId)
+        Id: new FormControl(this.UserId),
       });
 
     this.categoryService.getCategoryList(this.UserId).subscribe({

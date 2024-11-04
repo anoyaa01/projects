@@ -15,11 +15,11 @@
                 <h2>Add Expense</h2>
             </div>
 
+            <label>Expense Date : </label>
             <div class="input-group mb-3 box-border">
-                <label>Expense Date : </label>
-                <!-- <input type="datetime-local" class="form-control place-color" formControlName="ExpenseDate" id="floatingInputDate" placeholder="Date" max=""> -->
-                <label for="floatingInputDate" [innerText]="shownDate">
-                </label>
+                <input type="datetime-local" class="form-control place-color" formControlName="ExpenseDate" id="floatingInputDate" placeholder="Date" (change)= 'onChange($event)'> 
+                <!-- <label for="floatingInputDate" [innerText]="shownDate">
+                </label> -->
             </div>
 
             <div><label> Expense Amount:</label></div>

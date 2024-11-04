@@ -30,29 +30,51 @@
         <div class="col-sm-4 mb-3 mb-sm-0">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Previous Year Expense(in Total)</h5>
+                    <h5 class="card-title">Current Year Expense(in Total)</h5>
                     <p class="card-text">Expense Amount:</p>
                     <a class="btn btn-primary">Rs. 000000</a>
                 </div>
             </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 mb-3">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Previous Month Expense(in Total)</h5>
+                    <h5 class="card-title">Current Month Expense(in Total)</h5>
                     <p class="card-text">Expense Amount:</p>
                     <a href="#" class="btn btn-primary">Rs.0000</a>
                 </div>
             </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 mb-3">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Previous Week Expense(in Total)</h5>
+                    <h5 class="card-title">Current Week Expense(in Total)</h5>
                     <p class="card-text">Expense Amount:</p>
                     <a href="#" class="btn btn-primary">Rs. 0000</a>
                 </div>
             </div>
+        </div>
+        <div>
+            <label>Filter:</label>
+            <select><button class="btn btn-block btn-primary">Filter By</button>
+            <option id="dates">Dates</option>
+            <option id="month">Months</option>
+            <option id="year">Years</option>
+        </select>
+            <ul>
+                <li *ngFor="let expense of expenseList">
+                    <div class="card">
+                        <div class="card-body">
+                         <tr>
+                           <td> <h5>  {{ expense.description }}</h5></td>
+                            <td><p>   Amount:  Rs.{{ expense.amount }}</p></td>
+                           <td> <p class="card-text">   Category:  {{ expense.categoryName }}</p></td>
+                           <td> <p>   Date:   {{expense.date|date}}</p></td>
+                           </tr>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 </body>
