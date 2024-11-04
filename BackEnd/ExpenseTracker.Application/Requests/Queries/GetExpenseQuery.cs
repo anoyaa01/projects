@@ -31,8 +31,9 @@ namespace ExpenseTracker.Application.Requests.Queries
             List<ExpenseDTO> ExpenseList = new List<ExpenseDTO>();
 
             var query = from expense in context.Expense
-                        join user in context.Users on expense.Id equals user.Id
+                        join user in context.Users on expense.UserId equals user.Id
                         join category in context.Category on expense.CategoryId equals category.Id
+                        where expense.UserId == request.UserId
                         select new
                         {
                             amount = expense.Amount,
@@ -42,7 +43,7 @@ namespace ExpenseTracker.Application.Requests.Queries
                         };
 
             foreach (var retrieverdExpense in query)
-            {
+            {   
                 ExpenseDTO expenseDTO = new ExpenseDTO();
                 expenseDTO.Amount = retrieverdExpense.amount;
                 expenseDTO.Date = retrieverdExpense.date;

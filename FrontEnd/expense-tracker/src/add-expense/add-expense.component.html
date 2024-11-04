@@ -1,1 +1,55 @@
-<p>add-expense works!</p>
+<head>
+    <!--bootstrap link loader-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="d-flex bg-color container">
+    <div class="col-12 d-flex justify-content-center heightss">
+        <form [formGroup]="addExpenseDetails" class="form-group">
+
+            <div class="col-12 mb-5">
+                <h2>Add Expense</h2>
+            </div>
+
+            <div class="input-group mb-3 box-border">
+                <label>Expense Date : </label>
+                <!-- <input type="datetime-local" class="form-control place-color" formControlName="ExpenseDate" id="floatingInputDate" placeholder="Date" max=""> -->
+                <label for="floatingInputDate" [innerText]="shownDate">
+                </label>
+            </div>
+
+            <div><label> Expense Amount:</label></div>
+            <div class="input-group mb-2">
+                <span class="input-group-text">Rs.</span>
+                <input type="number" class="form-control" formControlName="Amount"
+                    aria-label="Indian Rupee amount (with dot and two decimal places)">
+            </div>
+            <div class="mb-3" *ngIf="addExpenseDetails.get('Amount')?.invalid && expenseSubmitted">Enter a valid Expense Amount</div>
+
+
+            <div><label> Expense Description:</label></div>
+            <div class="input-group mb-3">
+                <input type=text class="form-control" formControlName="Description">
+            </div>
+
+            <div>
+               <label>Select Expense Category Type:</label>
+            </div>
+            <div class="input-group mb-2">
+                <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon" formControlName="Category">
+                    <option *ngFor="let item of categoryList">{{item}}</option>
+                </select>
+                <button class="btn btn-secondary" type="button">Add New Category</button>
+            </div>
+            <div class="mb-4" *ngIf="addExpenseDetails.get('Category')?.invalid && expenseSubmitted">Select a Category of expense </div>
+
+            <div>
+                <button class="btn btn-primary" (click)="addExpense()">Add Expense</button>
+            </div>
+        </form>
+    </div>
+</body>
