@@ -12,21 +12,56 @@
 </head>
 
 <body class="mainbg">
-    
 
-    <div class="flex-container headerbg">
-        <div class="col-12 px-5 py-3">
+
+    <div class="flex-container">
+        <div class="row px-5 py-3 headerbg">
             <h3>Category breakdown</h3>
         </div>
-        <div class="row  ">
-            
+        <!-- <div class="row  ">
+            <div class="col-12 mx-5 my-5 d-flex">
+                <div class="row">
+                    <div class="col catbg" *ngFor="let item of expenseList">
+                       <p>{{ item.Description }}<br></p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
 
-            <div class="col-12 d-flex justify-content-center">
-                <!-- <form [formGroup]="RegisterUser" class="form-group">
-                    
-                </form>                      -->
+    
+
+    <div class="card flex-fill w-100 draggable">
+        <!-- <div class="card-header">
+            <h5 class="card-title mb-0">Expense Categories</h5>
+        </div> -->
+        <div class="card-body d-flex">
+            <div class="align-self-center w-100">
+                <div class="py-3">
+                    <div class="chart chart-xs">
+                        <canvas id="chartjs-expense-pie" width="200" height="200"></canvas>
+                    </div>
+                </div>
+                <table class="table mb-0 px-5">
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th class="text-end">Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Using *ngFor to populate the table with expenseList -->
+                        <tr *ngFor="let expense of expenseList">
+                            <td>{{ expense.Description }}</td> <!-- Display expense description -->
+                            <td class="text-end">{{ expense.Amount }}</td> <!-- Display expense amount -->
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
-   
+    
+
+
+
 </body>

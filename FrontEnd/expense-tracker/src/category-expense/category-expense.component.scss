@@ -4,6 +4,10 @@
 
 .mainbg{
     background-color: rgba(191, 176, 230, 0.542);
-    height: 100vh;
+    //height: 100vh;
+    min-height: 100vh;
 }
 
+.catbg{
+    border: 3px solid black;
+}
