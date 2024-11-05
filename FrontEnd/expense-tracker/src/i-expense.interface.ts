@@ -6,4 +6,5 @@ export interface IExpenseInterface {
      Description: FormControl<string | null>;
      Category: FormControl<string | null>;
      Id: FormControl<number | null>;
+     Date:FormControl<Date|null>;
 }

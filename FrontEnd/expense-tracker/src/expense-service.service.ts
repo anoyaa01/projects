@@ -32,4 +32,11 @@ export class ExpenseServiceService {
     const params=new HttpParams().set('id',id);
     return this.http.get(`http://localhost:5277/api/Expense`,{params}); 
 }
+
+getFilterExpense(id:number,startDate:Date,endDate:Date):Observable<any>
+{
+  const params=new HttpParams().set('id',id).set('startDate',startDate.toDateString()).set('endDate',endDate.toDateString());
+console.log(startDate,endDate);
+  return this.http.get('http://localhost:5277/api/Expense');
+}
 }

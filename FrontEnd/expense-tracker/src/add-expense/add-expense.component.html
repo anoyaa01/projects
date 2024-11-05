@@ -17,7 +17,8 @@
 
             <label>Expense Date : </label>
             <div class="input-group mb-3 box-border">
-                <input type="datetime-local" class="form-control place-color" formControlName="ExpenseDate" id="floatingInputDate" placeholder="Date" (change)= 'onChange($event)'> 
+                <input type="date" class="form-control place-color" formControlName="Date" id="floatingInputDate"
+                    placeholder="Date" (change)="onChange($event)">
                 <!-- <label for="floatingInputDate" [innerText]="shownDate">
                 </label> -->
             </div>
@@ -28,7 +29,8 @@
                 <input type="number" class="form-control" formControlName="Amount"
                     aria-label="Indian Rupee amount (with dot and two decimal places)">
             </div>
-            <div class="mb-3" *ngIf="addExpenseDetails.get('Amount')?.invalid && expenseSubmitted">Enter a valid Expense Amount</div>
+            <div class="mb-3" *ngIf="addExpenseDetails.get('Amount')?.invalid && expenseSubmitted">Enter a valid Expense
+                Amount</div>
 
 
             <div><label> Expense Description:</label></div>
@@ -37,15 +39,17 @@
             </div>
 
             <div>
-               <label>Select Expense Category Type:</label>
+                <label>Select Expense Category Type:</label>
             </div>
             <div class="input-group mb-2">
-                <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon" formControlName="Category">
+                <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon"
+                    formControlName="Category">
                     <option *ngFor="let item of categoryList">{{item}}</option>
                 </select>
                 <button class="btn btn-secondary" type="button">Add New Category</button>
             </div>
-            <div class="mb-4" *ngIf="addExpenseDetails.get('Category')?.invalid && expenseSubmitted">Select a Category of expense </div>
+            <div class="mb-4" *ngIf="addExpenseDetails.get('Category')?.invalid && expenseSubmitted">Select a Category
+                of expense </div>
 
             <div>
                 <button class="btn btn-primary" (click)="addExpense()">Add Expense</button>
