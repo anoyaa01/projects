@@ -16,42 +16,4 @@ namespace ExpenseTracker.Application.Requests.Queries
         public int UserId { get; set; }
     }
 
-    public class GetExpenseQueryHandler : IRequestHandler<GetExpenseQuery, List<ExpenseDTO>>
-    {
-        private readonly ExpenseTrackerContext context;
-
-        public GetExpenseQueryHandler(ExpenseTrackerContext context)
-        {
-            this.context = context;
-        }
-        public async Task<List<ExpenseDTO>> Handle(GetExpenseQuery request, CancellationToken cancellationToken)
-        {
-            Users requiredUser = context.Users.FirstOrDefault(x => x.Id == request.UserId);
-
-            List<ExpenseDTO> ExpenseList = new List<ExpenseDTO>();
-
-            var query = from expense in context.Expense
-                        join user in context.Users on expense.UserId equals user.Id
-                        join category in context.Category on expense.CategoryId equals category.Id
-                        where expense.UserId == request.UserId
-                        select new
-                        {
-                            amount = expense.Amount,
-                            date = expense.Date,
-                            description = expense.Description,
-                            categoryName = category.Name,
-                        };
-
-            foreach (var retrieverdExpense in query)
-            {   
-                ExpenseDTO expenseDTO = new ExpenseDTO();
-                expenseDTO.Amount = retrieverdExpense.amount;
-                expenseDTO.Date = retrieverdExpense.date;
-                expenseDTO.Description = retrieverdExpense.description;
-                expenseDTO.CategoryName = retrieverdExpense.categoryName;
-                ExpenseList.Add(expenseDTO);
-            }
-            return await Task.FromResult(ExpenseList);
-        }
-    }
 }

@@ -9,6 +9,6 @@ namespace ExpenseTracker.Infrastructure.Repositories
 {
     public interface IUserRepository
     {
-        public int AddUser(Users user);
+        public int AddUser(User user);
     }
 }

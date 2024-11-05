@@ -14,8 +14,8 @@ export class ProfileService {
     return this.http.get(`http://localhost:5277/api/Users`, { params });
   }
 
-  updateBudget(id: number): Observable<any> {
-    const params = new HttpParams().set('id', id);
-    return this.http.put(`http://localhost:5277/api/Users`, { params });
+  updateBudgetService(id: number,amount:number): Observable<any> {
+    const body = { UserId: id, Amount: amount };
+    return this.http.put(`http://localhost:5277/api/Budget`, body);
   }
 }

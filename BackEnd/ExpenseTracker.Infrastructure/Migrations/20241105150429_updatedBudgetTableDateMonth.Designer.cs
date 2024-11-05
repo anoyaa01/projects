@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ExpenseTracker.Infrastructure.Migrations
 {
     [DbContext(typeof(ExpenseTrackerContext))]
-    [Migration("20241030085145_testMig")]
-    partial class testMig
+    [Migration("20241105150429_updatedBudgetTableDateMonth")]
+    partial class updatedBudgetTableDateMonth
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,9 +36,8 @@ namespace ExpenseTracker.Infrastructure.Migrations
                     b.Property<double>("Amount")
                         .HasColumnType("float");
 
-                    b.Property<string>("Month")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<DateOnly>("Month")
+                        .HasColumnType("date");
 
                     b.Property<int>("UserId")
                         .HasColumnType("int");
@@ -89,7 +88,7 @@ namespace ExpenseTracker.Infrastructure.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("Date")
+                    b.Property<DateOnly>("Date")
                         .HasColumnType("Date");
 
                     b.Property<string>("Description")
@@ -108,7 +107,7 @@ namespace ExpenseTracker.Infrastructure.Migrations
                     b.ToTable("Expense");
                 });
 
-            modelBuilder.Entity("ExpenseTracker.Domain.Users", b =>
+            modelBuilder.Entity("ExpenseTracker.Domain.User", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -130,12 +129,12 @@ namespace ExpenseTracker.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.ToTable("User");
                 });
 
             modelBuilder.Entity("ExpenseTracker.Domain.Budget", b =>
                 {
-                    b.HasOne("ExpenseTracker.Domain.Users", "User")
+                    b.HasOne("ExpenseTracker.Domain.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -146,7 +145,7 @@ namespace ExpenseTracker.Infrastructure.Migrations
 
             modelBuilder.Entity("ExpenseTracker.Domain.Category", b =>
                 {
-                    b.HasOne("ExpenseTracker.Domain.Users", "User")
+                    b.HasOne("ExpenseTracker.Domain.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId");
 
@@ -161,7 +160,7 @@ namespace ExpenseTracker.Infrastructure.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ExpenseTracker.Domain.Users", "User")
+                    b.HasOne("ExpenseTracker.Domain.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)

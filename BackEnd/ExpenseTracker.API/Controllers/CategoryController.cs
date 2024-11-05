@@ -23,5 +23,13 @@ namespace ExpenseTracker.API.Controllers
             query.UserId = id;
             return await mediator.Send(query);
         }
+
+        [HttpGet("expenditure")]
+        public async Task<List<CategoryExpenditureDTO>> GetExpenditureByCategory(int id)
+        {
+            GetExpenditureByCategoryOuery query = new GetExpenditureByCategoryOuery();
+            query.UserId = id;
+            return await mediator.Send(query);
+        }
     }
 }

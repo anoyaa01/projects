@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { ProfileService } from '../profile.service';
+import { CommonModule } from '@angular/common';
+import { FormsModule, NgModel } from '@angular/forms';
 
 export interface UserProfile {
   name: string;
@@ -10,13 +12,16 @@ export interface UserProfile {
 @Component({
   selector: 'app-view-profile',
   standalone: true,
-  imports: [],
+  imports: [CommonModule,FormsModule],
   templateUrl: './view-profile.component.html',
   styleUrl: './view-profile.component.scss'
 })
 export class ViewProfileComponent {
+
   id: number = 1;
+  amount:number=0;
   userData: UserProfile | null = null;
+  update: boolean=false;
 
   constructor(private profile: ProfileService) { }
 
@@ -33,10 +38,18 @@ export class ViewProfileComponent {
     })
   }
   updateBudget() {
-    this.profile.updateBudget(this.id).subscribe({
+    this.update=true;
+  }
+
+  onConfirm() {
+    //console.log("amt n  onconfirm",this.amount)
+    //console.log("id n  onconfirm",this.id)
+
+    this.profile.updateBudgetService(this.id,this.amount).subscribe({
       next: (data) => {
-        console.log('Fetched expenses:', data);
-        this.userData = data;
+        console.log('Fetched expenses budget update:', data);
+        console.log(this.amount);
+        this.amount= data;
       },
       error: (error) => {
         console.error(error);

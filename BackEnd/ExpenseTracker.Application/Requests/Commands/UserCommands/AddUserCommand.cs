@@ -27,7 +27,7 @@ namespace ExpenseTracker.Application.Requests.Commands.UserCommands
         }
         public async Task<int> Handle(AddUserCommand request, CancellationToken cancellationToken)
         {
-            Users user = new Users();
+            User user = new User();
             user.Name = request.Name;
             user.PhoneNumber = request.PhoneNumber;
             user.Password = request.Password;

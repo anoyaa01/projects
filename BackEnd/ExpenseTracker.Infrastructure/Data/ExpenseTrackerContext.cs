@@ -13,19 +13,10 @@ namespace ExpenseTracker.Infrastructure.Data
         public ExpenseTrackerContext(DbContextOptions<ExpenseTrackerContext> options) : base(options) 
         {     
         }
-        public DbSet<Users> Users { get; set; }
+        public DbSet<User> User { get; set; }
         public DbSet<Expense> Expense { get; set; }
         public DbSet<Category> Category { get; set; }
         public DbSet<Budget> Budget { get; set; }
-        //public DbSet<CustomCategory> CustomCategory { get; set; }
-        //protected override void OnModelCreating(ModelBuilder modelBuilder)
-        //{
-        //  modelBuilder.Entity<Expense>()
-        //        .HasOne(e=>e.User)
-        //        .WithMany()
-        //        .HasForeignKey(x=>x.User)
-        //        .OnDelete(DeleteBehavior.Cascade);
-
-        //}
+  
     }
 }

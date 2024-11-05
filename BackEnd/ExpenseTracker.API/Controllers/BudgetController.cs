@@ -17,10 +17,11 @@ namespace ExpenseTracker.API.Controllers
             _mediator = mediator;
         }
         [HttpPut]
-        public async Task<int> UpdateBudget(int UserId,Budget budget)
+        public async Task<int> UpdateBudget([FromBody] UpdateBudgetCommand command)
         {
-            UpdateBudgetCommand command = new UpdateBudgetCommand();
-            command.UserId = UserId;
+            //UpdateBudgetCommand command = new UpdateBudgetCommand();
+            //command.UserId = UserId;
+            //command.Amount = amount;
             return await _mediator.Send(command);
         }
     }

@@ -11,26 +11,28 @@
 
 </head>
 
-<body class="mainbg">
-
-
+<body class="mainbg container">
+    <div>
+        <ul class="nav nav-tabs mb-3 ">
+            <li class="nav-item">
+                <a class="nav-link"  href="http://localhost:4200/track-expense">Track Expense</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost:4200/add-expense">Add Expense</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link-active" aria-current="page" href="http://localhost:4200/category-expense" >Category Expense</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost:4200/view-profile">View Profile</a>
+            </li>
+        </ul>
+    </div>
     <div class="flex-container">
         <div class="row px-5 py-3 headerbg">
             <h3>Category breakdown</h3>
         </div>
-        <!-- <div class="row  ">
-            <div class="col-12 mx-5 my-5 d-flex">
-                <div class="row">
-                    <div class="col catbg" *ngFor="let item of expenseList">
-                       <p>{{ item.Description }}<br></p>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </div>
-
-    
-
     <div class="card flex-fill w-100 draggable">
         <!-- <div class="card-header">
             <h5 class="card-title mb-0">Expense Categories</h5>
@@ -50,10 +52,9 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <!-- Using *ngFor to populate the table with expenseList -->
-                        <tr *ngFor="let expense of expenseList">
-                            <td>{{ expense.Description }}</td> <!-- Display expense description -->
-                            <td class="text-end">{{ expense.Amount }}</td> <!-- Display expense amount -->
+                        <tr *ngFor="let category of categoryList">
+                            <td>{{ category.name }}</td>
+                            <td class="text-end">{{ category.expenditure }}</td>
                         </tr>
                     </tbody>
                 </table>

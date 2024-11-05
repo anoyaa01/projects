@@ -4,6 +4,7 @@ import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } 
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { CustomerServiceService } from '../customer-service.service';
+import { Route, Router } from '@angular/router';
 
 
 @Component({
@@ -22,7 +23,7 @@ export class SignupPageComponent {
 /**
  *
  */
-constructor(private customerService:CustomerServiceService) { }
+constructor(private customerService:CustomerServiceService,private router:Router) { }
 
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
@@ -45,21 +46,10 @@ constructor(private customerService:CustomerServiceService) { }
         Password: this.RegisterUser.value.password,
       }
       
-      // console.log(newUser.Phone);
-      // console.log(newUser.Name);
       this.customerService.submitNewUser(newUser);
-
-      // this.http.post('http://localhost:5277/api/Users',addNewUser)
-      // .subscribe({
-      //   next:(value)=>
-      //   {
-      //     console.log(value);
-      //     this.RegisterUser.reset();
-      //   },
-      //   error: (err) => {
-      //     console.error('Registration error:', err);
-      //   }
-      // })
+      this.router.navigate(['/log-in']);
+        alert("User Successfully Registered !");
+  
     }
   }
 }

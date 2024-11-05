@@ -17,9 +17,9 @@ namespace ExpenseTracker.Infrastructure.Repository.Implementation
         {
             _context = context;
         }
-        public int AddUser(Users user)
+        public int AddUser(User user)
         {
-            _context.Users.Add(user);
+            _context.User.Add(user);
             return _context.SaveChanges();
         }
     }

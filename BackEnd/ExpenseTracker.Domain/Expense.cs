@@ -15,11 +15,11 @@ namespace ExpenseTracker.Domain
 
         [DataType(DataType.Date)]
         [Column(TypeName ="Date")]
-        public DateTime Date { get; set; }
+        public DateOnly Date { get; set; }
         public double Amount { get; set; }
         public string Description { get; set; }
         public int UserId { get; set; } 
-        public  Users User { get; set; }
+        public  User User { get; set; }
 
         public int CategoryId {  get; set; }    
         public Category Category { get; set; }

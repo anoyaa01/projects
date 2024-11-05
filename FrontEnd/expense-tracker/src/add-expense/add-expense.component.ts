@@ -17,7 +17,7 @@ export class AddExpenseComponent {
   expenseSubmitted: boolean = false;
   addExpenseDetails!: FormGroup<IExpenseInterface>;
   categoryList: string[] = [];
-  UserId: number = 3
+  UserId: number = 1;
   Today: Date = new Date();
   form: any;
 
@@ -34,25 +34,6 @@ export class AddExpenseComponent {
       alert("Select current date or a past date !!");
     }
   }
-
-  // onChange(selectedDate:any)
-  // { 
-  //   const fc = this.form.get(selectedDate);
-  //   const Today=new Date();
-  //   console.log(selectedDate)
-  //   console.log(Today)
-  // if(this.Today<selectedDate)
-  // {
-  //   alert("Select current date or a past date !!");
-  // }
-  // }
-
-  //   today: Date = new Date();
-  //   dd = (this.today.getDate()).toString();
-  //    mm = (this.today.getMonth() + 1).toString(); 
-  //    yyyy = (this.today.getFullYear()).toString();
-
-  //  shownDate = (this.yyyy + '-' + this.mm + '-' + this.dd);
 
   ngOnInit(): void {
     this.addExpenseDetails = new FormGroup<IExpenseInterface>
@@ -84,6 +65,7 @@ export class AddExpenseComponent {
         Amount: this.addExpenseDetails.value.Amount,
         Description: this.addExpenseDetails.value.Description,
         CategoryName: this.addExpenseDetails.value.Category,
+        Date:this.addExpenseDetails.value.Date,
         UserId: this.UserId
       }
       this.expenseService.submitNewExpense(newExpense);

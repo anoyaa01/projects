@@ -10,9 +10,9 @@ namespace ExpenseTracker.Domain
     public class Budget
     {
         public int Id { get; set; }
-        public string Month { get; set; }
+        public DateOnly Month { get; set; }
         public double Amount { get; set; }
         public int UserId {  get; set; }
-        public Users User { get; set; }
+        public User User { get; set; }
     }
 }

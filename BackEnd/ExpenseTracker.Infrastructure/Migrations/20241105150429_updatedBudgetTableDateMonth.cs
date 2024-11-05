@@ -6,13 +6,13 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ExpenseTracker.Infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class an : Migration
+    public partial class updatedBudgetTableDateMonth : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Users",
+                name: "User",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -23,7 +23,7 @@ namespace ExpenseTracker.Infrastructure.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Users", x => x.Id);
+                    table.PrimaryKey("PK_User", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -32,7 +32,7 @@ namespace ExpenseTracker.Infrastructure.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Month = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Month = table.Column<DateOnly>(type: "date", nullable: false),
                     Amount = table.Column<double>(type: "float", nullable: false),
                     UserId = table.Column<int>(type: "int", nullable: false)
                 },
@@ -40,9 +40,9 @@ namespace ExpenseTracker.Infrastructure.Migrations
                 {
                     table.PrimaryKey("PK_Budget", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Budget_Users_UserId",
+                        name: "FK_Budget_User_UserId",
                         column: x => x.UserId,
-                        principalTable: "Users",
+                        principalTable: "User",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -61,9 +61,9 @@ namespace ExpenseTracker.Infrastructure.Migrations
                 {
                     table.PrimaryKey("PK_Category", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Category_Users_UserId",
+                        name: "FK_Category_User_UserId",
                         column: x => x.UserId,
-                        principalTable: "Users",
+                        principalTable: "User",
                         principalColumn: "Id");
                 });
 
@@ -73,7 +73,7 @@ namespace ExpenseTracker.Infrastructure.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Date = table.Column<DateTime>(type: "Date", nullable: false),
+                    Date = table.Column<DateOnly>(type: "Date", nullable: false),
                     Amount = table.Column<double>(type: "float", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UserId = table.Column<int>(type: "int", nullable: false),
@@ -89,9 +89,9 @@ namespace ExpenseTracker.Infrastructure.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Expense_Users_UserId",
+                        name: "FK_Expense_User_UserId",
                         column: x => x.UserId,
-                        principalTable: "Users",
+                        principalTable: "User",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -130,7 +130,7 @@ namespace ExpenseTracker.Infrastructure.Migrations
                 name: "Category");
 
             migrationBuilder.DropTable(
-                name: "Users");
+                name: "User");
         }
     }
 }

@@ -9,7 +9,7 @@ namespace ExpenseTracker.Application.Requests.Commands
 {
     public class UpdateBudgetCommand:IRequest<int>
     {
-        public string Month { get; set; }
+       
         public double Amount { get; set; }
         public int UserId { get; set; }
     }

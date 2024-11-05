@@ -11,6 +11,23 @@
 
 <body class="container justify-content-center bg-color">
     <div>
+        <div>
+            <ul class="nav nav-tabs mb-3 ">
+                <li class="nav-item">
+                    <a class="nav-link " href="http://localhost:4200/track-expense">Track Expense</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:4200/add-expense">Add Expense</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:4200/category-expense" >Category Expense</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active"  aria-current="page" href="http://localhost:4200/view-profile">View Profile</a>
+                </li>
+            </ul>
+        </div>
+
         <div class="d-flex justify-content-center">
             <h1><i class=" fa-solid fa-user justify-content-center"></i></h1>
             <h1>User Profile</h1>
@@ -64,6 +81,7 @@
                         </div>
                         <div class="col-12 text-right">
                             <button class="btn btn-primary" (click)="updateBudget()">Update Budget</button>
+                            
                         </div>
                         <hr class="my-4" />
                         <h6 class="heading-small text-muted mb-4">About me</h6>
@@ -72,6 +90,10 @@
                                 hassle-free manner !</p>
                         </div>
                     </form>
+                    <div *ngIf="update">
+                        <input type="number" placeholder="enter the new Budget Amount" [(ngModel)]="amount">
+                        <button class="btn btn-primary" (click)="onConfirm()">Confirm Budget</button>
+                   </div>
                 </div>
             </div>
         </div>

@@ -25,6 +25,25 @@ namespace ExpenseTracker.API.Controllers
             return await mediator.Send(query);
         }
 
+        [HttpGet("ExpenseByDate")]
+        public async Task<List<ExpenseDTO>> GetExpenseByDate(int id,DateOnly startDate,DateOnly endDate)
+        {
+            GetExpenseByDateQuery query = new GetExpenseByDateQuery();
+            query.UserId=id;
+            query.endDate = endDate;
+            query.startDate = startDate;
+            return await mediator.Send(query);
+        }
+
+
+        [HttpGet("TotalByDate")]
+        public async Task<TotalExpenseDTO> GetTotalExpensesByDate(int id)
+        {
+            GetTotalExpensesQuery query = new GetTotalExpensesQuery();
+            query.UserId = id;
+            return await mediator.Send(query);
+        }
+
         [HttpPost]
         public async Task<int> AddNewExpense(AddExpenseCommand command)
         {
