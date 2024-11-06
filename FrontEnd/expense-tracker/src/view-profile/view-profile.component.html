@@ -1,89 +1,83 @@
-<body class="container justify-content-center bg-color">
-    <div>
-        <ul class="nav nav-tabs mb-3 ">
-            <li class="nav-item">
-                <a class="nav-link" aria-current="page"  [routerLink]="['/track-expense']">Track
-                    Expense</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/add-expense']" >Add Expense</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/category-expense']">Category Expense</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" [routerLink]="['/view-profile']">View Profile</a>
-            </li>
-        </ul>
+<!-- Navigation Tabs -->
+<div class=" nav-color ">
+    <ul class="nav nav-tabs ">
+        <li class="mx-3  nav-item">
+            <a class="nav-link active" [routerLink]="['/track-expense']">Track Expense</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/add-expense']">Add Expense</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/category-expense']">Category Expense</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/view-profile']">View Profile</a>
+        </li>
+    </ul>
+</div>
+
+<body class=" justify-content-center bg-color">
+    <div class="d-flex justify-content-center">
+        <h1><i class=" fa-solid fa-user justify-content-center"></i></h1>
+        <h1>User Profile</h1>
     </div>
+    <div class="container-fluid mt--7 d-flex justify-content-center">
 
-        <div class="d-flex justify-content-center">
-            <h1><i class=" fa-solid fa-user justify-content-center"></i></h1>
-            <h1>User Profile</h1>
-        </div>
-        <div class="container-fluid mt--7 d-flex justify-content-center">
-
-            <div class="card shadow">
-                <div class="card-header bg-white border-0">
-                    <div class="row align-items-center">
-                        <div class="col-8 ">
-                            <h3 class="mb-0">My account</h3>
-                        </div>
+        <div class="card shadow">
+            <div class="card-header bg-white border-0">
+                <div class="row align-items-center">
+                    <div class="col-8 ">
+                        <h3 class="mb-0">My account</h3>
                     </div>
                 </div>
-                <div class="card-body">
-                    <form>
-                        <h6 class="heading-small text-muted mb-4">User information</h6>
-                        <div class="pl-lg-4">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label class="form-control-label" for="input-username">Username:</label>
-                                        <p>{{userData?.name}}</p>
-                                    </div>
+            </div>
+            <div class="card-body width-set">
+                <form>
+                    <h6 class="heading-small text-muted mb-4">User information</h6>
+                    <div class="pl-lg-4">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="input-username">Username:</label>
+                                    <p>{{userData?.name}}</p>
                                 </div>
                             </div>
                         </div>
-                        <hr class="my-4" />
-                        <h6 class="heading-small text-muted mb-4">Contact information</h6>
-                        <div class="pl-lg-4">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <div class="form-group">
-                                        <label class="form-control-label" for="input-city">Phone Number:</label>
-                                        <p>{{userData?.phoneNumber}}</p>
-                                    </div>
+                    </div>
+                    <hr class="my-4" />
+                    <h6 class="heading-small text-muted mb-4">Contact information</h6>
+                    <div class="pl-lg-4">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="input-city">Phone Number:</label>
+                                    <p>{{userData?.phoneNumber}}</p>
                                 </div>
                             </div>
                         </div>
-                        <hr class="my-4" />
-                        <h6 class="heading-small text-muted mb-4">Budget information</h6>
-                        <div class="pl-lg-4">
-                            <div class="row">
-                                <div class="col-lg-4 align-items-right">
-                                    <div class="form-group">
-                                        <label class="form-control-label" for="input-city">Current Budget:</label>
-                                        <p>{{userData?.amount}}</p>
-                                    </div>
+                    </div>
+                    <hr class="my-4" />
+                    <h6 class="heading-small text-muted mb-4">Budget information</h6>
+                    <div class="pl-lg-4">
+                        <div class="row">
+                            <div class="col-lg-4 align-items-right">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="input-city">Current Budget:</label>
+                                    <p>{{userData?.amount}}</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 text-right">
-                            <button class="btn btn-primary" (click)="updateBudget()">Update Budget</button>
-                            
-                        </div>
-                        <hr class="my-4" />
-                        <h6 class="heading-small text-muted mb-4">About me</h6>
-                        <div class="pl-lg-4">
-                            <p>Track and manage your Budget in a
-                                hassle-free manner !</p>
-                        </div>
-                    </form>
-                    <div *ngIf="update">
-                        <input type="number" placeholder="enter the new Budget Amount" [(ngModel)]="amount">
-                        <button class="btn btn-primary" (click)="onConfirm()">Confirm Budget</button>
-                   </div>
+                    </div>
+                    <div class="col-12 text-right">
+                        <button class="btn btn-primary" (click)="updateBudget()">Update Budget</button>
+
+                    </div>
+                </form>
+                <div *ngIf="update">
+                    <input type="number" placeholder="enter the new Budget Amount" [(ngModel)]="amount">
+                    <button class="btn btn-primary" (click)="onConfirm()">Confirm Budget</button>
                 </div>
             </div>
         </div>
+    </div>
 </body>

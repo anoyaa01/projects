@@ -1,98 +1,95 @@
-<body class="container justify-content-center bg-color">
-    <div>
-        <ul class="nav nav-tabs mb-3 ">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page"  [routerLink]="['/track-expense']">Track
-                    Expense</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/add-expense']" >Add Expense</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/category-expense']">Category Expense</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/view-profile']">View Profile</a>
-            </li>
-        </ul>
-    </div>
-    <div class="row">
-        <div *ngFor="let amount of totalExpenseList">
-            <div class="row">
-                <div class="col-sm-4 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Current Year Expense(in Total)</h5>
-                            <p class="card-text">Expense Amount:</p>
-                            <a class="btn btn-primary">{{amount.yearlyExpense | currency:'INR' }}</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Current Month Expense(in Total)</h5>
-                            <p class="card-text">Expense Amount:</p>
-                            <a class="btn btn-primary">{{amount.monthlyExpense | currency:'INR' }}</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Monthly Budget Remaining</h5>
-                            <p class="card-text">Amount:</p>
-                            <a class="btn btn-primary">{{ amount.remainingBudget | currency:'INR' }}</a>
-                        </div>
-                    </div>
+<!-- Navigation Tabs -->
+<div class=" nav-color ">
+    <ul class="nav nav-tabs ">
+        <li class="mx-3  nav-item">
+            <a class="nav-link active" [routerLink]="['/track-expense']">Track Expense</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/add-expense']">Add Expense</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/category-expense']">Category Expense</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/view-profile']">View Profile</a>
+        </li>
+    </ul>
+</div>
+<body class=" bg-color p-4">
+    <!-- Expense Summary Cards -->
+    <div class="row mb-4">
+        <div class="col-sm-4 mb-3" *ngFor="let amount of totalExpenseList">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Current Year Expense (in Total)</h5>
+                    <p class="card-text text-muted">Expense Amount:</p>
+                    <a class="btn btn-primary">{{ amount.yearlyExpense | currency: 'INR' }}</a>
                 </div>
             </div>
         </div>
-        <div class=" mb-3">
-            <label>Filter By Date Range:</label>
-            <input type="date" placeholder="startDate" (change)="onSelectStart($event)">
-            <input type="date" placeholder="endDate" (change)="onSelectEnd($event)">
-            <button class="btn btn-primary" (click)="applyFilter()">Apply</button>
-            <ul *ngIf="!filter">
-                <li *ngFor="let expense of expenseList; index as i">
 
+        <div class="col-sm-4 mb-3" *ngFor="let amount of totalExpenseList">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Current Month Expense (in Total)</h5>
+                    <p class="card-text text-muted">Expense Amount:</p>
+                    <a class="btn btn-primary">{{ amount.monthlyExpense | currency: 'INR' }}</a>
+                </div>
+            </div>
+        </div>
 
-                    <ul class="list-group">
-                        <li class="list-group-item d-flex justify-content-between align-items-start">
-                            <div class="ms-2 me-auto d-flex ">
-                                <div class="fw-bold">
-                                    <h5> {{expense.description}}</h5>
-                                </div>
-                                <div> Amount: {{ expense.amount | currency:'INR' }}</div>
-                                <div>Category: {{ expense.categoryName }}</div>
-                                <div>Date: {{expense.date|date}}</div>
-                            </div>
-                            <span class="badge text-bg-primary rounded-pill"><button class="btn btn-primary "
-                                    (click)="onDelete(i)">Delete</button></span>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <ul *ngIf="filter">
-                <li *ngFor="let expenseFilter of expenseFilterList ;index as i">
-                    <div class="card">
-                        <ul class="list-group">
-                            <li class="list-group-item d-flex justify-content-between align-items-start">
-                                <div class="ms-2 me-auto d-flex ">
-                                    <div class="fw-bold">
-                                        <h5> {{expenseFilter.description}}</h5>
-                                    </div>
-                                    <div> Amount: Rs.{{ expenseFilter.amount }}</div>
-                                    <div>Category: {{ expenseFilter.categoryName }}</div>
-                                    <div>Date: {{expenseFilter.date|date}}</div>
-                                </div>
-                                <span class="badge text-bg-primary rounded-pill"><button class="btn btn-primary "
-                                        (click)="onFilterDelete(i)">Delete</button></span>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
+        <div class="col-sm-4 mb-3" *ngFor="let amount of totalExpenseList">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Monthly Budget Remaining</h5>
+                    <p class="card-text text-muted">Amount:</p>
+                    <a class="btn btn-primary">{{ amount.remainingBudget | currency: 'INR' }}</a>
+                </div>
+            </div>
         </div>
     </div>
+
+    <!-- Date Filter Section -->
+    <div class="mb-4">
+        <div class="form-group">
+            <label class="form-label me-2">Filter By Date Range:</label>
+            <input type="date" class="form-control d-inline-block w-auto me-2" (change)="onSelectStart($event)" />
+            <input type="date" class="form-control d-inline-block w-auto me-2" (change)="onSelectEnd($event)" />
+            <button class="btn btn-primary" (click)="applyFilter()">Apply</button>
+        </div>
+    </div>
+
+    <!-- Expense List -->
+    <ul class="list-group">
+        <li *ngFor="let expense of expenseList; index as i"
+            class="list-group-item d-flex justify-content-between align-items-center mb-2 shadow-sm">
+            <!-- Expense Details Section -->
+            <div class="ms-2 me-auto">
+                <h5 class="fw-bold mb-1">{{ expense.description }}</h5>
+                <p class="mb-0">
+                    <span class="text-muted">Amount:</span> {{ expense.amount | currency: 'INR' }}
+                    <span class="text-muted ms-3">Category:</span> {{ expense.categoryName }}
+                    <span class="text-muted ms-3">Date:</span> {{ expense.date | date }}
+                </p>
+            </div>
+            <!-- Delete Button Section -->
+            <button class="btn btn-outline-danger btn-sm" (click)="onDelete(i)">Delete</button>
+        </li>
+    </ul>
+
+    <!-- Filtered Expense List -->
+    <ul *ngIf="filter" class="list-group mt-3">
+        <li *ngFor="let expenseFilter of expenseFilterList; index as i"
+            class="list-group-item d-flex justify-content-between align-items-start mb-2 shadow-sm">
+            <div class="ms-2 me-auto">
+                <h5 class="fw-bold mb-1">{{ expenseFilter.description }}</h5>
+                <p class="mb-0">
+                    <span class="text-muted">Amount:</span> Rs.{{ expenseFilter.amount }}
+                    <span class="text-muted ms-3">Category:</span> {{ expenseFilter.categoryName }}
+                    <span class="text-muted ms-3">Date:</span> {{ expenseFilter.date | date }}
+                </p>
+            </div>
+            <button class="btn btn-outline-danger btn-sm" (click)="onFilterDelete(i)">Delete</button>
+        </li>
+    </ul>
 </body>

@@ -1,21 +1,21 @@
-<body class="d-flex bg-color container">
-    <div>
-        <ul class="nav nav-tabs mb-3 ">
-            <li class="nav-item">
-                <a class="nav-link" aria-current="page"  [routerLink]="['/track-expense']">Track
-                    Expense</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" [routerLink]="['/add-expense']" >Add Expense</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/category-expense']">Category Expense</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/view-profile']">View Profile</a>
-            </li>
-        </ul>
-    </div>
+<!-- Navigation Tabs -->
+<div class=" nav-color ">
+    <ul class="nav nav-tabs ">
+        <li class="mx-3 nav-item">
+            <a class="nav-link active" [routerLink]="['/track-expense']">Track Expense</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/add-expense']">Add Expense</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/category-expense']">Category Expense</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/view-profile']">View Profile</a>
+        </li>
+    </ul>
+</div>
+<body class="d-flex bg-color justify-content-center">
     <div class="justify-content-center heightss py-5 mb-6">
         <form [formGroup]="addExpenseDetails" class="form-group">
 
