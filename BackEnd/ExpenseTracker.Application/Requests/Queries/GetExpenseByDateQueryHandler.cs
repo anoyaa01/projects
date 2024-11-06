@@ -2,6 +2,7 @@
 using ExpenseTracker.Domain;
 using ExpenseTracker.Infrastructure.Data;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +21,7 @@ namespace ExpenseTracker.Application.Requests.Queries
         }
         public async Task<List<ExpenseDTO>> Handle(GetExpenseByDateQuery request, CancellationToken cancellationToken)
         {
-            User requiredUser = _context.User.FirstOrDefault(x => x.Id == request.UserId);
+            User requiredUser =await _context.User.FirstOrDefaultAsync(x => x.Id == request.UserId);
 
             List<ExpenseDTO> ExpenseList = new List<ExpenseDTO>();
 
@@ -34,6 +35,7 @@ namespace ExpenseTracker.Application.Requests.Queries
                             date = expense.Date,
                             description = expense.Description,
                             categoryName = category.Name,
+                            id = expense.Id,
                         };
 
             foreach (var retrieverdExpense in query)
@@ -43,6 +45,7 @@ namespace ExpenseTracker.Application.Requests.Queries
                 expenseDTO.Date = retrieverdExpense.date;
                 expenseDTO.Description = retrieverdExpense.description;
                 expenseDTO.CategoryName = retrieverdExpense.categoryName;
+                expenseDTO.Id = retrieverdExpense.id;
                 ExpenseList.Add(expenseDTO);
             }
             return await Task.FromResult(ExpenseList);

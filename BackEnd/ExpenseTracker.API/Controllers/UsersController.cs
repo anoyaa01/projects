@@ -31,5 +31,11 @@ namespace ExpenseTracker.API.Controllers
             query.RequestId = Id;
             return await _mediator.Send(query);
         }
+
+        [HttpPost("login")]
+        public async Task<int> LoginCheck([FromBody] LoginQuery loginQuery)
+        {
+            return await _mediator.Send(loginQuery);
+        }
     }
 }

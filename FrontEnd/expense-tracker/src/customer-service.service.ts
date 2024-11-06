@@ -13,7 +13,8 @@ export class CustomerServiceService {
   constructor(private http: HttpClient,private router:Router) { }
 
   checkUserDetails(data:any): Observable<number> {
-    return this.http.post<number>(`http://localhost:5277/api/Users/Login`, data);
+    console.log(data);
+    return this.http.post<number>(`http://localhost:5277/api/Users/login`, data);
   }
 
 

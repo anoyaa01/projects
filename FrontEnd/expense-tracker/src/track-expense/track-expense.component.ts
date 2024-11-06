@@ -4,6 +4,8 @@ import { CategoryExpenseComponent } from '../category-expense/category-expense.c
 import { AddExpenseComponent } from '../add-expense/add-expense.component';
 import { ExpenseServiceService } from '../expense-service.service';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { UserIdService } from '../user-id.service';
 
 export interface UserProfile {
   monthlyExpense: number;
@@ -14,7 +16,7 @@ export interface UserProfile {
 @Component({
   selector: 'app-track-expense',
   standalone: true,
-  imports: [ViewProfileComponent,TrackExpenseComponent,CategoryExpenseComponent,AddExpenseComponent,CommonModule],
+  imports: [ViewProfileComponent,TrackExpenseComponent,CategoryExpenseComponent,AddExpenseComponent,CommonModule,RouterModule],
   templateUrl: './track-expense.component.html',
   styleUrl: './track-expense.component.scss'
 })
@@ -29,9 +31,12 @@ startDate : Date=new Date();
 endDate :Date=new Date();
   filter: boolean=false;
   totalExpenseList: any[]=[];
-constructor(private expenseService: ExpenseServiceService) { }
+ 
+
+constructor(private expenseService: ExpenseServiceService,private UserIdService:UserIdService) { }
 
 ngOnInit(): void {
+  this.userId=this.UserIdService.userId;
  this.filter=false;
   this.expenseService.getNewExpense(this.userId).subscribe({
     next: (data) => {
@@ -39,7 +44,7 @@ ngOnInit(): void {
       this.expenseList = data; 
     },
     error: (error) => {
-      console.error(error);
+      console.log(error);
     }
   })
 
@@ -49,7 +54,7 @@ ngOnInit(): void {
      this.totalExpenseList = [data]; 
     },
     error: (error) => {
-      console.error(error);
+      console.log(error);
     }
   })
   
@@ -64,7 +69,7 @@ onSelectStart(event:Event)
     if (selectedStartDateObj > this.today) {
       alert("Select current date or a past date !!");
     }
-this.startDate=selectedStartDateObj;
+    this.startDate=selectedStartDateObj;
 
 }
 
@@ -82,23 +87,56 @@ onSelectEnd(event:Event)
 
 }
 
-onFilter()
+applyFilter()
 {
   this.filter=true;
   this.expenseService.getFilterExpense(this.userId,this.startDate,this.endDate).subscribe({
   next: (data) => {
-    console.log('Fetched expenses:', data); 
+    console.log(this.userId,this.startDate,this.endDate);
+
+    console.log('Fetched expenses after filter:', data); 
     this.expenseFilterList = data; 
   },
   error: (error) => {
-    console.error(error);
+    console.log(error);
   }
 })
 }
 
-applyFilter()
+
+
+
+onDelete(index : number) 
 {
-this.onFilter();
+ alert("Your selected expense is getting Deleted !!");
+ console.log(this.expenseList[index].id);
+  this.expenseService.removeExpense(this.userId,this.expenseList[index].id).subscribe({
+    next:()=>
+    {
+      console.log(" delete successfully connected");
+      this.expenseList.splice(index, 1);
+    },
+  error: (error) => {
+    console.log(error);
+  }
+})
+}
+
+
+onFilterDelete(index : number) 
+{
+ alert("Your selected expense is getting Deleted !!");
+ console.log(this.expenseFilterList[index].id);
+  this.expenseService.removeExpense(this.userId,this.expenseFilterList[index].id).subscribe({
+    next:()=>
+    {
+      console.log(" delete successfully connected");
+      this.expenseFilterList.splice(index, 1);
+    },
+  error: (error) => {
+    console.log(error);
+  }
+})
 }
 
 }

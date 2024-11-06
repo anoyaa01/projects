@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "command",
-        "Type": "ExpenseTracker.Application.Requests.Commands.UpdateBudgetCommand",
+        "Type": "ExpenseTracker.Application.Requests.Commands.BudgetCommands.UpdateBudgetCommand",
         "IsRequired": true
       }
     ],
@@ -41,7 +41,33 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "System.Collections.Generic.List\u00601[[ExpenseTracker.Application.DTOs.CategoryDTO, ExpenseTracker.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ExpenseTracker.API.Controllers.CategoryController",
+    "Method": "AddCustomCategory",
+    "RelativePath": "api/Category",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "ExpenseTracker.Application.Requests.Commands.CategoryCommands.AddCustomCategoryCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -131,14 +157,45 @@
   },
   {
     "ContainingType": "ExpenseTracker.API.Controllers.ExpenseController",
+    "Method": "RemoveExpense",
+    "RelativePath": "api/Expense",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ExpenseId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ExpenseTracker.API.Controllers.ExpenseController",
     "Method": "GetExpenseByDate",
-    "RelativePath": "api/Expense/ExpenseByDate",
+    "RelativePath": "api/Expense/expense-by-date",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "UserId",
         "Type": "System.Int32",
         "IsRequired": false
       },
@@ -168,7 +225,7 @@
   {
     "ContainingType": "ExpenseTracker.API.Controllers.ExpenseController",
     "Method": "GetTotalExpensesByDate",
-    "RelativePath": "api/Expense/TotalByDate",
+    "RelativePath": "api/Expense/total-by-date",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -244,16 +301,22 @@
     ]
   },
   {
-    "ContainingType": "ExpenseTracker.API.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
-    "HttpMethod": "GET",
+    "ContainingType": "ExpenseTracker.API.Controllers.UsersController",
+    "Method": "LoginCheck",
+    "RelativePath": "api/Users/login",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "loginQuery",
+        "Type": "ExpenseTracker.Application.Requests.Queries.LoginQuery",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[ExpenseTracker.API.WeatherForecast, ExpenseTracker.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Int32",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -261,7 +324,6 @@
         ],
         "StatusCode": 200
       }
-    ],
-    "EndpointName": "GetWeatherForecast"
+    ]
   }
 ]

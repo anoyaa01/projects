@@ -8,7 +8,7 @@ import { CustomerServiceService } from './customer-service.service';
 })
 export class UserIdService {
 
-  userId: number| null = null;
+  userId: number= 0;
   constructor(private customerService: CustomerServiceService) { }
 
   setUserId(id: number): void {
@@ -16,8 +16,4 @@ export class UserIdService {
     console.log("SETuserid calledd")
   }
 
-  getUserId(): number{
-    console.log("GETuserid calledd")
-    return this.userId!;
-  }
 }

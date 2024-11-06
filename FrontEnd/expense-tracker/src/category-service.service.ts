@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class CategoryServiceService {
-
+ 
   constructor(private http: HttpClient) { }
 
   getCategoryList(userId:number) : Observable<any>{
@@ -19,4 +19,9 @@ export class CategoryServiceService {
     const params = new HttpParams().set('id', userId);
     return this.http.get<any>(`http://localhost:5277/api/Category/expenditure`, { params });
   }
+
+    addNewCategory(userCategory:any):Observable<any>{
+      return this.http.post(`http://localhost:5277/api/Category`,userCategory);
+  }
+
 }

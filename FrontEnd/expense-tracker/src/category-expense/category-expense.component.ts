@@ -3,6 +3,8 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Chart } from 'chart.js/auto';
 import { CategoryServiceService } from '../category-service.service';
+import { RouterModule } from '@angular/router';
+import { UserIdService } from '../user-id.service';
 
 interface ICategory {
   name: string;
@@ -13,22 +15,23 @@ interface ICategory {
 @Component({
   selector: 'app-category-expense',
   standalone: true,
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule,RouterModule],
   templateUrl: './category-expense.component.html',
   styleUrls: ['./category-expense.component.scss']
 })
 
 export class CategoryExpenseComponent  {
 
-  userId:number = 3;
+  userId:number = 1;
   categoryList:ICategory[]=[];
 
-  constructor(private categoryService : CategoryServiceService) {
+  constructor(private categoryService : CategoryServiceService,private UserIdService:UserIdService) {
     
   }
 
   ngOnInit(): void {
-
+    this.userId=this.UserIdService.userId;
+    console.log("userid in catexp",this.userId);
     this.categoryService.getExpenditureByCategory(this.userId).subscribe({
       next: (data) => {
         this.categoryList = data; 

@@ -28,10 +28,12 @@ constructor(private customerService:CustomerServiceService,private router:Router
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
+  
     this.RegisterUser = new FormGroup<IRegister>
       ({
         name: new FormControl('', Validators.required),
         phoneNumber: new FormControl('', [Validators.required, Validators.pattern('^[0-9]{10}$')]),
+        initialBudget:new FormControl(0,Validators.required),
         password: new FormControl('', [Validators.required, Validators.minLength(8)]),
         cPassword: new FormControl('', [Validators.required, Validators.minLength(8)])
       });

@@ -1,32 +1,21 @@
-<head>
-    <!--bootstrap link loader-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <!--to use font awesome ,importing link-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-</head>
-
 <body class="container justify-content-center bg-color">
     <div>
-        <div>
-            <ul class="nav nav-tabs mb-3 ">
-                <li class="nav-item">
-                    <a class="nav-link " href="http://localhost:4200/track-expense">Track Expense</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="http://localhost:4200/add-expense">Add Expense</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="http://localhost:4200/category-expense" >Category Expense</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active"  aria-current="page" href="http://localhost:4200/view-profile">View Profile</a>
-                </li>
-            </ul>
-        </div>
+        <ul class="nav nav-tabs mb-3 ">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page"  [routerLink]="['/track-expense']">Track
+                    Expense</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/add-expense']" >Add Expense</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/category-expense']">Category Expense</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" [routerLink]="['/view-profile']">View Profile</a>
+            </li>
+        </ul>
+    </div>
 
         <div class="d-flex justify-content-center">
             <h1><i class=" fa-solid fa-user justify-content-center"></i></h1>
@@ -97,5 +86,4 @@
                 </div>
             </div>
         </div>
-    </div>
 </body>

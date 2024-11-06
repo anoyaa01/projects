@@ -3,52 +3,92 @@
   "WorkspaceRootPath": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{89D91A49-BEBE-4EE4-9FF3-2F65E01B6058}|..\\ExpenseTracker.Domain\\ExpenseTracker.Domain.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.domain\\budget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89D91A49-BEBE-4EE4-9FF3-2F65E01B6058}|..\\ExpenseTracker.Domain\\ExpenseTracker.Domain.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.domain\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89D91A49-BEBE-4EE4-9FF3-2F65E01B6058}|..\\ExpenseTracker.Domain\\ExpenseTracker.Domain.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.domain\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\commands\\expensecommands\\addexpensecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\commands\\usercommands\\addusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\commands\\updatebudgetcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\commands\\updatebudgetcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Migrations\\20241105150429_updatedBudgetTableDateMonth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\queries\\getexpensequeryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\queries\\getexpensebydatequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\queries\\getexpensebydatequeryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\queries\\getcategoriesqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\commands\\usercommands\\addusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\queries\\gettotalexpensesqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\commands\\expensecommands\\removeexpensecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\commands\\expensecommands\\addexpensecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\commands\\categorycommands\\addcustomcategorycommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\commands\\budgetcommands\\updatebudgetcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\queries\\loginqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\queries\\getuserbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75272890-D8EE-430A-81EC-A946B5B57A1D}|..\\ExpenseTracker.Infrastructure\\ExpenseTracker.Infrastructure.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.infrastructure\\data\\expensetrackercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\queries\\gettotalexpensesqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89D91A49-BEBE-4EE4-9FF3-2F65E01B6058}|..\\ExpenseTracker.Domain\\ExpenseTracker.Domain.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.domain\\expense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\queries\\gettotalexpensesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75272890-D8EE-430A-81EC-A946B5B57A1D}|..\\ExpenseTracker.Infrastructure\\ExpenseTracker.Infrastructure.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.infrastructure\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\queries\\getexpensequeryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\queries\\getexpenditurebycategoryqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\queries\\getcategoriesqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\queries\\getcategoriesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3990A1A5-4684-42CE-A2BC-0D09481868C5}|ExpenseTracker.API.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3990A1A5-4684-42CE-A2BC-0D09481868C5}|ExpenseTracker.API.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\commands\\categorycommands\\addcustomcategorycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3990A1A5-4684-42CE-A2BC-0D09481868C5}|ExpenseTracker.API.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3990A1A5-4684-42CE-A2BC-0D09481868C5}|ExpenseTracker.API.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3990A1A5-4684-42CE-A2BC-0D09481868C5}|ExpenseTracker.API.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.api\\controllers\\expensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3990A1A5-4684-42CE-A2BC-0D09481868C5}|ExpenseTracker.API.csproj|solutionrelative:controllers\\expensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3990A1A5-4684-42CE-A2BC-0D09481868C5}|ExpenseTracker.API.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.api\\controllers\\budgetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3990A1A5-4684-42CE-A2BC-0D09481868C5}|ExpenseTracker.API.csproj|solutionrelative:controllers\\budgetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\commands\\expensecommands\\addexpensecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\commands\\usercommands\\addusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\dtos\\expensedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\queries\\getexpensequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\dtos\\categoryexpendituredto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\dtos\\totalexpensedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\queries\\loginquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89D91A49-BEBE-4EE4-9FF3-2F65E01B6058}|..\\ExpenseTracker.Domain\\ExpenseTracker.Domain.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.domain\\budget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75272890-D8EE-430A-81EC-A946B5B57A1D}|..\\ExpenseTracker.Infrastructure\\ExpenseTracker.Infrastructure.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.infrastructure\\repository.implementation\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -57,7 +97,19 @@
       "AbsoluteMoniker": "D:0:0:{75272890-D8EE-430A-81EC-A946B5B57A1D}|..\\ExpenseTracker.Infrastructure\\ExpenseTracker.Infrastructure.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.infrastructure\\repository.implementation\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\commands\\expensecommands\\addexpensecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{75272890-D8EE-430A-81EC-A946B5B57A1D}|..\\ExpenseTracker.Infrastructure\\ExpenseTracker.Infrastructure.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.infrastructure\\data\\expensetrackercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89D91A49-BEBE-4EE4-9FF3-2F65E01B6058}|..\\ExpenseTracker.Domain\\ExpenseTracker.Domain.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.domain\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89D91A49-BEBE-4EE4-9FF3-2F65E01B6058}|..\\ExpenseTracker.Domain\\ExpenseTracker.Domain.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.domain\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89D91A49-BEBE-4EE4-9FF3-2F65E01B6058}|..\\ExpenseTracker.Domain\\ExpenseTracker.Domain.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.domain\\expense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75272890-D8EE-430A-81EC-A946B5B57A1D}|..\\ExpenseTracker.Infrastructure\\ExpenseTracker.Infrastructure.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.infrastructure\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Migrations\\20241105145606_updatedBudgetTableDateMonth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -66,46 +118,13 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Migrations\\20241105145345_updatedBudgetTableDateMonth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3990A1A5-4684-42CE-A2BC-0D09481868C5}|ExpenseTracker.API.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.api\\controllers\\budgetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3990A1A5-4684-42CE-A2BC-0D09481868C5}|ExpenseTracker.API.csproj|solutionrelative:controllers\\budgetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\queries\\getexpenditurebycategoryqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\queries\\getexpenditurebycategoryquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3990A1A5-4684-42CE-A2BC-0D09481868C5}|ExpenseTracker.API.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.api\\controllers\\expensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3990A1A5-4684-42CE-A2BC-0D09481868C5}|ExpenseTracker.API.csproj|solutionrelative:controllers\\expensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\queries\\getcategoriesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\dtos\\expensedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Migrations\\20241105071113_track-expense-filter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3990A1A5-4684-42CE-A2BC-0D09481868C5}|ExpenseTracker.API.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3990A1A5-4684-42CE-A2BC-0D09481868C5}|ExpenseTracker.API.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\dtos\\totalexpensedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\dtos\\categoryexpendituredto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\queries\\getexpensequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\queries\\getexpensebydatequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0E949F6-7ADB-4554-A1FE-AB38AE94B3CE}|..\\ExpenseTracker.Application\\ExpenseTracker.Application.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.application\\requests\\queries\\gettotalexpensesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{75272890-D8EE-430A-81EC-A946B5B57A1D}|..\\ExpenseTracker.Infrastructure\\ExpenseTracker.Infrastructure.csproj|c:\\users\\anoya.a\\desktop\\expensetrackerproject\\backend\\expensetracker.infrastructure\\migrations\\20241105150429_updatedbudgettabledatemonth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -115,17 +134,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 15,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.API\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
               "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.API\\Controllers\\CategoryController.cs",
               "RelativeToolTip": "Controllers\\CategoryController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwBsAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-04T07:00:43.636Z",
               "IsPinned": true,
@@ -133,267 +152,254 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UpdateBudgetCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Commands\\UpdateBudgetCommandHandler.cs",
-              "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Commands\\UpdateBudgetCommandHandler.cs",
-              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Commands\\UpdateBudgetCommandHandler.cs",
-              "RelativeToolTip": "..\\ExpenseTracker.Application\\Requests\\Commands\\UpdateBudgetCommandHandler.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAABXAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "GetExpenseByDateQuery.cs",
+              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenseByDateQuery.cs",
+              "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenseByDateQuery.cs",
+              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenseByDateQuery.cs",
+              "RelativeToolTip": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenseByDateQuery.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAoAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T13:46:28.351Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AddUserCommand.cs",
-              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Commands\\UserCommands\\AddUserCommand.cs",
-              "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Commands\\UserCommands\\AddUserCommand.cs",
-              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Commands\\UserCommands\\AddUserCommand.cs",
-              "RelativeToolTip": "..\\ExpenseTracker.Application\\Requests\\Commands\\UserCommands\\AddUserCommand.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwB4AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T14:58:51.831Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AddExpenseCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Commands\\ExpenseCommands\\AddExpenseCommandHandler.cs",
-              "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Commands\\ExpenseCommands\\AddExpenseCommandHandler.cs",
-              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Commands\\ExpenseCommands\\AddExpenseCommandHandler.cs",
-              "RelativeToolTip": "..\\ExpenseTracker.Application\\Requests\\Commands\\ExpenseCommands\\AddExpenseCommandHandler.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAmwBcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T14:55:15.268Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Domain\\User.cs",
-              "RelativeDocumentMoniker": "..\\ExpenseTracker.Domain\\User.cs",
-              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Domain\\User.cs",
-              "RelativeToolTip": "..\\ExpenseTracker.Domain\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T14:56:53.549Z",
+              "WhenOpened": "2024-11-05T06:30:59.116Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Domain\\Category.cs",
-              "RelativeDocumentMoniker": "..\\ExpenseTracker.Domain\\Category.cs",
-              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Domain\\Category.cs",
-              "RelativeToolTip": "..\\ExpenseTracker.Domain\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T14:58:10.629Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Budget.cs",
-              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Domain\\Budget.cs",
-              "RelativeDocumentMoniker": "..\\ExpenseTracker.Domain\\Budget.cs",
-              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Domain\\Budget.cs",
-              "RelativeToolTip": "..\\ExpenseTracker.Domain\\Budget.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T14:51:20.917Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UpdateBudgetCommand.cs",
-              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Commands\\UpdateBudgetCommand.cs",
-              "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Commands\\UpdateBudgetCommand.cs",
-              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Commands\\UpdateBudgetCommand.cs",
-              "RelativeToolTip": "..\\ExpenseTracker.Application\\Requests\\Commands\\UpdateBudgetCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T13:59:39.071Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "20241105150429_updatedBudgetTableDateMonth.cs",
-              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Migrations\\20241105150429_updatedBudgetTableDateMonth.cs",
-              "RelativeDocumentMoniker": "..\\ExpenseTracker.Infrastructure\\Migrations\\20241105150429_updatedBudgetTableDateMonth.cs",
-              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Migrations\\20241105150429_updatedBudgetTableDateMonth.cs",
-              "RelativeToolTip": "..\\ExpenseTracker.Infrastructure\\Migrations\\20241105150429_updatedBudgetTableDateMonth.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T15:04:29.443Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "GetExpenseByDateQueryHandler.cs",
               "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenseByDateQueryHandler.cs",
               "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenseByDateQueryHandler.cs",
               "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenseByDateQueryHandler.cs",
               "RelativeToolTip": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenseByDateQueryHandler.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAAABYAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAACAAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-05T06:31:15.211Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "GetCategoriesQueryHandler.cs",
-              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetCategoriesQueryHandler.cs",
-              "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetCategoriesQueryHandler.cs",
-              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetCategoriesQueryHandler.cs",
-              "RelativeToolTip": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetCategoriesQueryHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAQAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "AddUserCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Commands\\UserCommands\\AddUserCommandHandler.cs",
+              "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Commands\\UserCommands\\AddUserCommandHandler.cs",
+              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Commands\\UserCommands\\AddUserCommandHandler.cs",
+              "RelativeToolTip": "..\\ExpenseTracker.Application\\Requests\\Commands\\UserCommands\\AddUserCommandHandler.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T06:44:21.305Z",
+              "WhenOpened": "2024-11-06T04:00:10.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddCustomCategoryCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Commands\\CategoryCommands\\AddCustomCategoryCommandHandler.cs",
+              "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Commands\\CategoryCommands\\AddCustomCategoryCommandHandler.cs",
+              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Commands\\CategoryCommands\\AddCustomCategoryCommandHandler.cs",
+              "RelativeToolTip": "..\\ExpenseTracker.Application\\Requests\\Commands\\CategoryCommands\\AddCustomCategoryCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T15:03:08.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddExpenseCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Commands\\ExpenseCommands\\AddExpenseCommandHandler.cs",
+              "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Commands\\ExpenseCommands\\AddExpenseCommandHandler.cs",
+              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Commands\\ExpenseCommands\\AddExpenseCommandHandler.cs",
+              "RelativeToolTip": "..\\ExpenseTracker.Application\\Requests\\Commands\\ExpenseCommands\\AddExpenseCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:55:15.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RemoveExpenseCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Commands\\ExpenseCommands\\RemoveExpenseCommandHandler.cs",
+              "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Commands\\ExpenseCommands\\RemoveExpenseCommandHandler.cs",
+              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Commands\\ExpenseCommands\\RemoveExpenseCommandHandler.cs",
+              "RelativeToolTip": "..\\ExpenseTracker.Application\\Requests\\Commands\\ExpenseCommands\\RemoveExpenseCommandHandler.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T06:25:16.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UpdateBudgetCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Commands\\BudgetCommands\\UpdateBudgetCommandHandler.cs",
+              "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Commands\\BudgetCommands\\UpdateBudgetCommandHandler.cs",
+              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Commands\\BudgetCommands\\UpdateBudgetCommandHandler.cs",
+              "RelativeToolTip": "..\\ExpenseTracker.Application\\Requests\\Commands\\BudgetCommands\\UpdateBudgetCommandHandler.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAzwCMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T13:46:28.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\LoginQueryHandler.cs",
+              "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Queries\\LoginQueryHandler.cs",
+              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\LoginQueryHandler.cs",
+              "RelativeToolTip": "..\\ExpenseTracker.Application\\Requests\\Queries\\LoginQueryHandler.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T04:19:55.664Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "GetExpenseQueryHandler.cs",
-              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenseQueryHandler.cs",
-              "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenseQueryHandler.cs",
-              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenseQueryHandler.cs",
-              "RelativeToolTip": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenseQueryHandler.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAmwBoAAAA7AAAAAAAAAA==",
+              "Title": "GetUserByIdQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetUserByIdQueryHandler.cs",
+              "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetUserByIdQueryHandler.cs",
+              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetUserByIdQueryHandler.cs",
+              "RelativeToolTip": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetUserByIdQueryHandler.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T06:40:18.988Z",
+              "WhenOpened": "2024-11-06T12:31:52.57Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "GetTotalExpensesQueryHandler.cs",
               "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetTotalExpensesQueryHandler.cs",
               "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetTotalExpensesQueryHandler.cs",
               "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetTotalExpensesQueryHandler.cs",
               "RelativeToolTip": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetTotalExpensesQueryHandler.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-05T06:41:47.174Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "GetUserByIdQueryHandler.cs",
-              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetUserByIdQueryHandler.cs",
-              "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetUserByIdQueryHandler.cs",
-              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetUserByIdQueryHandler.cs",
-              "RelativeToolTip": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetUserByIdQueryHandler.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACAAAAApAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "GetTotalExpensesQuery.cs",
+              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetTotalExpensesQuery.cs",
+              "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetTotalExpensesQuery.cs",
+              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetTotalExpensesQuery.cs",
+              "RelativeToolTip": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetTotalExpensesQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T14:57:27.414Z",
+              "WhenOpened": "2024-11-05T06:16:20.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GetExpenseQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenseQueryHandler.cs",
+              "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenseQueryHandler.cs",
+              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenseQueryHandler.cs",
+              "RelativeToolTip": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenseQueryHandler.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwCwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T06:40:18.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "GetExpenditureByCategoryQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenditureByCategoryQueryHandler.cs",
+              "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenditureByCategoryQueryHandler.cs",
+              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenditureByCategoryQueryHandler.cs",
+              "RelativeToolTip": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenditureByCategoryQueryHandler.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T06:42:55.703Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "ExpenseTrackerContext.cs",
-              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Data\\ExpenseTrackerContext.cs",
-              "RelativeDocumentMoniker": "..\\ExpenseTracker.Infrastructure\\Data\\ExpenseTrackerContext.cs",
-              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Data\\ExpenseTrackerContext.cs",
-              "RelativeToolTip": "..\\ExpenseTracker.Infrastructure\\Data\\ExpenseTrackerContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA1AAAAAAAAAA==",
+              "Title": "GetCategoriesQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetCategoriesQueryHandler.cs",
+              "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetCategoriesQueryHandler.cs",
+              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetCategoriesQueryHandler.cs",
+              "RelativeToolTip": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetCategoriesQueryHandler.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAmwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T14:57:47.96Z",
+              "WhenOpened": "2024-11-05T06:44:21.305Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "Expense.cs",
-              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Domain\\Expense.cs",
-              "RelativeDocumentMoniker": "..\\ExpenseTracker.Domain\\Expense.cs",
-              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Domain\\Expense.cs",
-              "RelativeToolTip": "..\\ExpenseTracker.Domain\\Expense.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAUAAAAAAAAAA==",
+              "Title": "GetCategoriesQuery.cs",
+              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetCategoriesQuery.cs",
+              "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetCategoriesQuery.cs",
+              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetCategoriesQuery.cs",
+              "RelativeToolTip": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetCategoriesQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T06:58:59.763Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Repositories\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "..\\ExpenseTracker.Infrastructure\\Repositories\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Repositories\\IUserRepository.cs",
-              "RelativeToolTip": "..\\ExpenseTracker.Infrastructure\\Repositories\\IUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T15:00:04.196Z",
+              "WhenOpened": "2024-11-05T06:43:59.224Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Repository.Implementation\\UserRepository.cs",
-              "RelativeDocumentMoniker": "..\\ExpenseTracker.Infrastructure\\Repository.Implementation\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Repository.Implementation\\UserRepository.cs",
-              "RelativeToolTip": "..\\ExpenseTracker.Infrastructure\\Repository.Implementation\\UserRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAlAAAAAAAAAA==",
+              "Title": "AddCustomCategoryCommand.cs",
+              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Commands\\CategoryCommands\\AddCustomCategoryCommand.cs",
+              "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Commands\\CategoryCommands\\AddCustomCategoryCommand.cs",
+              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Commands\\CategoryCommands\\AddCustomCategoryCommand.cs",
+              "RelativeToolTip": "..\\ExpenseTracker.Application\\Requests\\Commands\\CategoryCommands\\AddCustomCategoryCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T14:59:33.375Z",
+              "WhenOpened": "2024-11-06T15:02:55.377Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "CategoryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Repository.Implementation\\CategoryRepository.cs",
-              "RelativeDocumentMoniker": "..\\ExpenseTracker.Infrastructure\\Repository.Implementation\\CategoryRepository.cs",
-              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Repository.Implementation\\CategoryRepository.cs",
-              "RelativeToolTip": "..\\ExpenseTracker.Infrastructure\\Repository.Implementation\\CategoryRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAALAAAAAAAAAA==",
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.API\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.API\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T14:59:47.46Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "20241105145606_updatedBudgetTableDateMonth.cs",
-              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Migrations\\20241105145606_updatedBudgetTableDateMonth.cs",
-              "RelativeDocumentMoniker": "..\\ExpenseTracker.Infrastructure\\Migrations\\20241105145606_updatedBudgetTableDateMonth.cs",
-              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Migrations\\20241105145606_updatedBudgetTableDateMonth.cs",
-              "RelativeToolTip": "..\\ExpenseTracker.Infrastructure\\Migrations\\20241105145606_updatedBudgetTableDateMonth.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T14:56:07.046Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "20241105145345_updatedBudgetTableDateMonth.cs",
-              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Migrations\\20241105145345_updatedBudgetTableDateMonth.cs",
-              "RelativeDocumentMoniker": "..\\ExpenseTracker.Infrastructure\\Migrations\\20241105145345_updatedBudgetTableDateMonth.cs",
-              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Migrations\\20241105145345_updatedBudgetTableDateMonth.cs",
-              "RelativeToolTip": "..\\ExpenseTracker.Infrastructure\\Migrations\\20241105145345_updatedBudgetTableDateMonth.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T14:53:45.61Z",
+              "WhenOpened": "2024-11-06T04:16:04.741Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
+              "Title": "ExpenseController.cs",
+              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.API\\Controllers\\ExpenseController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ExpenseController.cs",
+              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.API\\Controllers\\ExpenseController.cs",
+              "RelativeToolTip": "Controllers\\ExpenseController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwDUAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T06:25:30.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BudgetController.cs",
+              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.API\\Controllers\\BudgetController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BudgetController.cs",
+              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.API\\Controllers\\BudgetController.cs",
+              "RelativeToolTip": "Controllers\\BudgetController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T13:56:03.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "AddExpenseCommand.cs",
               "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Commands\\ExpenseCommands\\AddExpenseCommand.cs",
               "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Commands\\ExpenseCommands\\AddExpenseCommand.cs",
@@ -407,123 +413,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 21,
-              "Title": "BudgetController.cs",
-              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.API\\Controllers\\BudgetController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BudgetController.cs",
-              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.API\\Controllers\\BudgetController.cs",
-              "RelativeToolTip": "Controllers\\BudgetController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAmAAAAAAAAAA==",
+              "Title": "AddUserCommand.cs",
+              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Commands\\UserCommands\\AddUserCommand.cs",
+              "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Commands\\UserCommands\\AddUserCommand.cs",
+              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Commands\\UserCommands\\AddUserCommand.cs",
+              "RelativeToolTip": "..\\ExpenseTracker.Application\\Requests\\Commands\\UserCommands\\AddUserCommand.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwBEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T13:56:03.018Z",
+              "WhenOpened": "2024-11-05T14:58:51.831Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "GetExpenditureByCategoryQueryHandler.cs",
-              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenditureByCategoryQueryHandler.cs",
-              "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenditureByCategoryQueryHandler.cs",
-              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenditureByCategoryQueryHandler.cs",
-              "RelativeToolTip": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenditureByCategoryQueryHandler.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T06:42:55.703Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "GetExpenditureByCategoryQuery.cs",
-              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenditureByCategoryQuery.cs",
-              "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenditureByCategoryQuery.cs",
-              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenditureByCategoryQuery.cs",
-              "RelativeToolTip": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenditureByCategoryQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T06:18:13.077Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "ExpenseController.cs",
-              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.API\\Controllers\\ExpenseController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ExpenseController.cs",
-              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.API\\Controllers\\ExpenseController.cs",
-              "RelativeToolTip": "Controllers\\ExpenseController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAYwCoAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T06:25:30.003Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "GetCategoriesQuery.cs",
-              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetCategoriesQuery.cs",
-              "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetCategoriesQuery.cs",
-              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetCategoriesQuery.cs",
-              "RelativeToolTip": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetCategoriesQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T06:43:59.224Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
               "Title": "ExpenseDTO.cs",
               "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\DTOs\\ExpenseDTO.cs",
               "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\DTOs\\ExpenseDTO.cs",
               "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\DTOs\\ExpenseDTO.cs",
               "RelativeToolTip": "..\\ExpenseTracker.Application\\DTOs\\ExpenseDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-05T06:30:08.569Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "20241105071113_track-expense-filter.cs",
-              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Migrations\\20241105071113_track-expense-filter.cs",
-              "RelativeDocumentMoniker": "..\\ExpenseTracker.Infrastructure\\Migrations\\20241105071113_track-expense-filter.cs",
-              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Migrations\\20241105071113_track-expense-filter.cs",
-              "RelativeToolTip": "..\\ExpenseTracker.Infrastructure\\Migrations\\20241105071113_track-expense-filter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T07:11:13.647Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "TotalExpenseDTO.cs",
-              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\DTOs\\TotalExpenseDTO.cs",
-              "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\DTOs\\TotalExpenseDTO.cs",
-              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\DTOs\\TotalExpenseDTO.cs",
-              "RelativeToolTip": "..\\ExpenseTracker.Application\\DTOs\\TotalExpenseDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T06:22:30.045Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "CategoryExpenditureDTO.cs",
-              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\DTOs\\CategoryExpenditureDTO.cs",
-              "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\DTOs\\CategoryExpenditureDTO.cs",
-              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\DTOs\\CategoryExpenditureDTO.cs",
-              "RelativeToolTip": "..\\ExpenseTracker.Application\\DTOs\\CategoryExpenditureDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T06:21:01.368Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 23,
               "Title": "GetExpenseQuery.cs",
               "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenseQuery.cs",
               "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenseQuery.cs",
@@ -536,29 +451,203 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "GetExpenseByDateQuery.cs",
-              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenseByDateQuery.cs",
-              "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenseByDateQuery.cs",
-              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenseByDateQuery.cs",
-              "RelativeToolTip": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenseByDateQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 24,
+              "Title": "CategoryExpenditureDTO.cs",
+              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\DTOs\\CategoryExpenditureDTO.cs",
+              "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\DTOs\\CategoryExpenditureDTO.cs",
+              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\DTOs\\CategoryExpenditureDTO.cs",
+              "RelativeToolTip": "..\\ExpenseTracker.Application\\DTOs\\CategoryExpenditureDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T06:30:59.116Z",
+              "WhenOpened": "2024-11-05T06:21:01.368Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "GetTotalExpensesQuery.cs",
-              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetTotalExpensesQuery.cs",
-              "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetTotalExpensesQuery.cs",
-              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetTotalExpensesQuery.cs",
-              "RelativeToolTip": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetTotalExpensesQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
+              "DocumentIndex": 25,
+              "Title": "TotalExpenseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\DTOs\\TotalExpenseDTO.cs",
+              "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\DTOs\\TotalExpenseDTO.cs",
+              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\DTOs\\TotalExpenseDTO.cs",
+              "RelativeToolTip": "..\\ExpenseTracker.Application\\DTOs\\TotalExpenseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T06:16:20.289Z",
+              "WhenOpened": "2024-11-05T06:22:30.045Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "LoginQuery.cs",
+              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\LoginQuery.cs",
+              "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Queries\\LoginQuery.cs",
+              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\LoginQuery.cs",
+              "RelativeToolTip": "..\\ExpenseTracker.Application\\Requests\\Queries\\LoginQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T04:19:43.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Budget.cs",
+              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Domain\\Budget.cs",
+              "RelativeDocumentMoniker": "..\\ExpenseTracker.Domain\\Budget.cs",
+              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Domain\\Budget.cs",
+              "RelativeToolTip": "..\\ExpenseTracker.Domain\\Budget.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T14:51:20.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Repository.Implementation\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "..\\ExpenseTracker.Infrastructure\\Repository.Implementation\\CategoryRepository.cs",
+              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Repository.Implementation\\CategoryRepository.cs",
+              "RelativeToolTip": "..\\ExpenseTracker.Infrastructure\\Repository.Implementation\\CategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T14:59:47.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Repository.Implementation\\UserRepository.cs",
+              "RelativeDocumentMoniker": "..\\ExpenseTracker.Infrastructure\\Repository.Implementation\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Repository.Implementation\\UserRepository.cs",
+              "RelativeToolTip": "..\\ExpenseTracker.Infrastructure\\Repository.Implementation\\UserRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T14:59:33.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ExpenseTrackerContext.cs",
+              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Data\\ExpenseTrackerContext.cs",
+              "RelativeDocumentMoniker": "..\\ExpenseTracker.Infrastructure\\Data\\ExpenseTrackerContext.cs",
+              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Data\\ExpenseTrackerContext.cs",
+              "RelativeToolTip": "..\\ExpenseTracker.Infrastructure\\Data\\ExpenseTrackerContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T14:57:47.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Domain\\User.cs",
+              "RelativeDocumentMoniker": "..\\ExpenseTracker.Domain\\User.cs",
+              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Domain\\User.cs",
+              "RelativeToolTip": "..\\ExpenseTracker.Domain\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T14:56:53.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Domain\\Category.cs",
+              "RelativeDocumentMoniker": "..\\ExpenseTracker.Domain\\Category.cs",
+              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Domain\\Category.cs",
+              "RelativeToolTip": "..\\ExpenseTracker.Domain\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T14:58:10.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "20241105150429_updatedBudgetTableDateMonth.cs",
+              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Migrations\\20241105150429_updatedBudgetTableDateMonth.cs",
+              "RelativeDocumentMoniker": "..\\ExpenseTracker.Infrastructure\\Migrations\\20241105150429_updatedBudgetTableDateMonth.cs",
+              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Migrations\\20241105150429_updatedBudgetTableDateMonth.cs",
+              "RelativeToolTip": "..\\ExpenseTracker.Infrastructure\\Migrations\\20241105150429_updatedBudgetTableDateMonth.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T15:04:29.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Expense.cs",
+              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Domain\\Expense.cs",
+              "RelativeDocumentMoniker": "..\\ExpenseTracker.Domain\\Expense.cs",
+              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Domain\\Expense.cs",
+              "RelativeToolTip": "..\\ExpenseTracker.Domain\\Expense.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T06:58:59.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "..\\ExpenseTracker.Infrastructure\\Repositories\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "..\\ExpenseTracker.Infrastructure\\Repositories\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T15:00:04.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "20241105145606_updatedBudgetTableDateMonth.cs",
+              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Migrations\\20241105145606_updatedBudgetTableDateMonth.cs",
+              "RelativeDocumentMoniker": "..\\ExpenseTracker.Infrastructure\\Migrations\\20241105145606_updatedBudgetTableDateMonth.cs",
+              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Migrations\\20241105145606_updatedBudgetTableDateMonth.cs",
+              "RelativeToolTip": "..\\ExpenseTracker.Infrastructure\\Migrations\\20241105145606_updatedBudgetTableDateMonth.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T14:56:07.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "20241105145345_updatedBudgetTableDateMonth.cs",
+              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Migrations\\20241105145345_updatedBudgetTableDateMonth.cs",
+              "RelativeDocumentMoniker": "..\\ExpenseTracker.Infrastructure\\Migrations\\20241105145345_updatedBudgetTableDateMonth.cs",
+              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Migrations\\20241105145345_updatedBudgetTableDateMonth.cs",
+              "RelativeToolTip": "..\\ExpenseTracker.Infrastructure\\Migrations\\20241105145345_updatedBudgetTableDateMonth.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T14:53:45.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "GetExpenditureByCategoryQuery.cs",
+              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenditureByCategoryQuery.cs",
+              "RelativeDocumentMoniker": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenditureByCategoryQuery.cs",
+              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenditureByCategoryQuery.cs",
+              "RelativeToolTip": "..\\ExpenseTracker.Application\\Requests\\Queries\\GetExpenditureByCategoryQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T06:18:13.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "20241105071113_track-expense-filter.cs",
+              "DocumentMoniker": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Migrations\\20241105071113_track-expense-filter.cs",
+              "RelativeDocumentMoniker": "..\\ExpenseTracker.Infrastructure\\Migrations\\20241105071113_track-expense-filter.cs",
+              "ToolTip": "C:\\Users\\anoya.a\\Desktop\\ExpenseTrackerProject\\BackEnd\\ExpenseTracker.Infrastructure\\Migrations\\20241105071113_track-expense-filter.cs",
+              "RelativeToolTip": "..\\ExpenseTracker.Infrastructure\\Migrations\\20241105071113_track-expense-filter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T07:11:13.647Z"
             }
           ]
         }

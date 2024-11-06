@@ -5,12 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExpenseTracker.Application.Requests.Commands
+namespace ExpenseTracker.Application.Requests.Commands.ExpenseCommands
 {
-    public class UpdateBudgetCommand:IRequest<int>
+    public class RemoveExpenseCommand : IRequest<int>
     {
-       
-        public double Amount { get; set; }
+        public int ExpenseId { get; set; }
         public int UserId { get; set; }
     }
 }

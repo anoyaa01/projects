@@ -23,14 +23,21 @@ namespace ExpenseTracker.Application.Requests.Queries
         public async Task<UserDTO> Handle(GetUserByIdQuery request, CancellationToken cancellationToken)
         {
 
-            User user = _context.User.FirstOrDefault(x => x.Id.Equals(request.RequestId));
+            User user = await _context.User.FirstOrDefaultAsync(x => x.Id.Equals(request.RequestId));
              UserDTO userDTO = new UserDTO();
-                Budget budget = _context.Budget.FirstOrDefault(x => x.UserId.Equals(request.RequestId));
+                Budget budget =await _context.Budget.FirstOrDefaultAsync(x => (x.UserId.Equals(request.RequestId)) && (x.Month.Month.Equals(DateTime.Now.Month)) && (x.Month.Year.Equals(DateTime.Now.Year)));
                 userDTO.Name = user.Name;
-                userDTO.PhoneNumber= user.PhoneNumber;  
-                userDTO.Amount= budget.Amount;
+                userDTO.PhoneNumber= user.PhoneNumber;
+            if (budget == null)
+            {
+                userDTO.Amount = 0;
+            }
+            else
+            {
+                userDTO.Amount = budget.Amount;
+            }
 
-            return await Task.FromResult(userDTO);
+            return userDTO;
         }
     }
 }

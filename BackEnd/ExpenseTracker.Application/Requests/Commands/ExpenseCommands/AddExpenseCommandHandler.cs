@@ -1,6 +1,7 @@
 ﻿using ExpenseTracker.Domain;
 using ExpenseTracker.Infrastructure.Data;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,31 +10,26 @@ using System.Threading.Tasks;
 
 namespace ExpenseTracker.Application.Requests.Commands.ExpenseCommands
 {
-    public class AddExpenseCommandHandler : IRequestHandler<AddExpenseCommand, int>
+    public class AddExpenseCommandHandler(ExpenseTrackerContext Context) : IRequestHandler<AddExpenseCommand, int>
     {
-        private readonly ExpenseTrackerContext context;
-
-        public AddExpenseCommandHandler(ExpenseTrackerContext Context)
-        {
-            context = Context;
-        }
+        private readonly ExpenseTrackerContext _context = Context;
 
         public async Task<int> Handle(AddExpenseCommand request, CancellationToken cancellationToken)
         {
             Expense expense = new Expense();
 
-            expense.User = context.User.FirstOrDefault(x => x.Id == request.UserId);
+            expense.User = await _context.User.FirstOrDefaultAsync(x => x.Id == request.UserId);
             expense.Date = request.Date;
             expense.Description = string.IsNullOrEmpty(request.Description) ? "No description provided" : request.Description;
             expense.Amount = request.Amount;
 
-            var categories = context.Category.Where(x => x.InBuilt == true || x.UserId == request.UserId);
-            expense.Category = categories.FirstOrDefault(x => x.Name == request.CategoryName);
+            var categories = _context.Category.Where(x => x.InBuilt == true || x.UserId == request.UserId);
+            expense.Category =await  categories.FirstOrDefaultAsync(x => x.Name == request.CategoryName);
 
 
-            context.Add(expense);
+            _context.Add(expense);
 
-            return await context.SaveChangesAsync();
+            return await _context.SaveChangesAsync();
         }
     }
 }

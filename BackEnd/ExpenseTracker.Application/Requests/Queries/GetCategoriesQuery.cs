@@ -11,7 +11,7 @@ using MediatR;
 
 namespace ExpenseTracker.Application.Requests.Queries
 {
-    public class GetCategoriesQuery : IRequest<List<string>>
+    public class GetCategoriesQuery : IRequest<List<CategoryDTO>>
     {
         public int UserId { get; set; }
     }

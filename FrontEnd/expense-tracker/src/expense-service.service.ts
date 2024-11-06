@@ -7,7 +7,7 @@ import { Route, Router } from '@angular/router';
   providedIn: 'root'
 })
 export class ExpenseServiceService {
-  
+
    constructor(private http:HttpClient) {}
 
   submitNewExpense(data:any):any {
@@ -17,6 +17,7 @@ export class ExpenseServiceService {
         next:(value)=>
         {
           console.log(value);
+          alert("New Expense added successfully !");
          },
          error:(err)=>
          {
@@ -35,15 +36,20 @@ getTotalExpense(id:number):Observable<any>
 {
   const params=new HttpParams().set('id',id);
   console.log();
-  return this.http.get(`http://localhost:5277/api/Expense/TotalByDate`,{params});  
+  return this.http.get(`http://localhost:5277/api/Expense/total-by-date`,{params});  
 }
 
 getFilterExpense(id:number,startDate:Date,endDate:Date):Observable<any>
 {
-  const formattedStartDate = startDate.toISOString().split('T')[0]; 
-  const formattedEndDate = endDate.toISOString().split('T')[0]; 
-  const params=new HttpParams().set('id',id).set('startDate',startDate.toDateString()).set('endDate',endDate.toDateString());
-  console.log(formattedStartDate,formattedEndDate);
-  return this.http.get('http://localhost:5277/api/Expense/ExpenseByDate',{params});
+   const params=new HttpParams().set('Userid',id).set('startDate',startDate.toDateString()).set('endDate',endDate.toDateString());
+  return this.http.get('http://localhost:5277/api/Expense/expense-by-date',{params});
 }
+
+removeExpense(UserId: number,ExpenseId:number) {
+  const params=new HttpParams().set('UserId',UserId).set('ExpenseId',ExpenseId);
+  const headers = { 'Accept': 'application/json' };
+
+  return this.http.delete('http://localhost:5277/api/Expense',{params,headers});  
+}
+
 }

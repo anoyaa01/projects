@@ -1,4 +1,4 @@
-﻿using ExpenseTracker.Application.Requests.Commands;
+﻿using ExpenseTracker.Application.Requests.Commands.BudgetCommands;
 using ExpenseTracker.Domain;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -19,9 +19,6 @@ namespace ExpenseTracker.API.Controllers
         [HttpPut]
         public async Task<int> UpdateBudget([FromBody] UpdateBudgetCommand command)
         {
-            //UpdateBudgetCommand command = new UpdateBudgetCommand();
-            //command.UserId = UserId;
-            //command.Amount = amount;
             return await _mediator.Send(command);
         }
     }

@@ -24,10 +24,7 @@ namespace ExpenseTracker.Application.Requests.Queries
                                                           && e.Date.Year == DateTime.Now.Year)
                                                     .Sum(e => e.Amount);
 
-                //CultureInfo myCI = new CultureInfo("en-US");
-                //Calendar myCal = myCI.Calendar;
-
-                //var currentWeek = myCal.GetWeekOfYear;
+                
 
                 TotalExpenseDTO totalExpenseDTO = new();
                 totalExpenseDTO.YearlyExpense = yearlyTotal;

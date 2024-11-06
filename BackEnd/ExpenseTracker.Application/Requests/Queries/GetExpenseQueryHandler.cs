@@ -2,6 +2,7 @@
 using ExpenseTracker.Domain;
 using ExpenseTracker.Infrastructure.Data;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,23 +11,19 @@ using System.Threading.Tasks;
 
 namespace ExpenseTracker.Application.Requests.Queries
 { 
-        public class GetExpenseQueryHandler : IRequestHandler<GetExpenseQuery, List<ExpenseDTO>>
+        public class GetExpenseQueryHandler(ExpenseTrackerContext context) : IRequestHandler<GetExpenseQuery, List<ExpenseDTO>>
         {
-            private readonly ExpenseTrackerContext context;
+            private readonly ExpenseTrackerContext _context = context;
 
-            public GetExpenseQueryHandler(ExpenseTrackerContext context)
+        public async Task<List<ExpenseDTO>> Handle(GetExpenseQuery request, CancellationToken cancellationToken)
             {
-                this.context = context;
-            }
-            public async Task<List<ExpenseDTO>> Handle(GetExpenseQuery request, CancellationToken cancellationToken)
-            {
-                User requiredUser = context.User.FirstOrDefault(x => x.Id == request.UserId);
+                User requiredUser = await _context.User.FirstOrDefaultAsync(x => x.Id == request.UserId);
 
                 List<ExpenseDTO> ExpenseList = new List<ExpenseDTO>();
 
-                var query = from expense in context.Expense
-                            join user in context.User on expense.UserId equals user.Id
-                            join category in context.Category on expense.CategoryId equals category.Id
+                var query = from expense in _context.Expense
+                            join user in _context.User on expense.UserId equals user.Id
+                            join category in _context.Category on expense.CategoryId equals category.Id
                             where expense.UserId == request.UserId
                             select new
                             {
@@ -34,6 +31,7 @@ namespace ExpenseTracker.Application.Requests.Queries
                                 date = expense.Date,
                                 description = expense.Description,
                                 categoryName = category.Name,
+                                id=expense.Id,
                             };
 
                 foreach (var retrieverdExpense in query)
@@ -43,7 +41,8 @@ namespace ExpenseTracker.Application.Requests.Queries
                     expenseDTO.Date = retrieverdExpense.date;
                     expenseDTO.Description = retrieverdExpense.description;
                     expenseDTO.CategoryName = retrieverdExpense.categoryName;
-                    ExpenseList.Add(expenseDTO);
+                    expenseDTO.Id = retrieverdExpense.id;
+                ExpenseList.Add(expenseDTO);
                 }
                 return await Task.FromResult(ExpenseList);
             }
