@@ -24,7 +24,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Current Year Expense(in Total)</h5>
                             <p class="card-text">Expense Amount:</p>
-                            <a class="btn btn-primary">Rs. {{amount.yearlyExpense}}</a>
+                            <a class="btn btn-primary">{{amount.yearlyExpense | currency:'INR' }}</a>
                         </div>
                     </div>
                 </div>
@@ -33,7 +33,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Current Month Expense(in Total)</h5>
                             <p class="card-text">Expense Amount:</p>
-                            <a href="#" class="btn btn-primary">Rs.{{amount.monthlyExpense}}</a>
+                            <a class="btn btn-primary">{{amount.monthlyExpense | currency:'INR' }}</a>
                         </div>
                     </div>
                 </div>
@@ -42,7 +42,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Monthly Budget Remaining</h5>
                             <p class="card-text">Amount:</p>
-                            <a href="#" class="btn btn-primary">Rs. 0000</a>
+                            <a class="btn btn-primary">{{ amount.remainingBudget | currency:'INR' }}</a>
                         </div>
                     </div>
                 </div>
@@ -63,7 +63,7 @@
                                 <div class="fw-bold">
                                     <h5> {{expense.description}}</h5>
                                 </div>
-                                <div> Amount: Rs.{{ expense.amount }}</div>
+                                <div> Amount: {{ expense.amount | currency:'INR' }}</div>
                                 <div>Category: {{ expense.categoryName }}</div>
                                 <div>Date: {{expense.date|date}}</div>
                             </div>

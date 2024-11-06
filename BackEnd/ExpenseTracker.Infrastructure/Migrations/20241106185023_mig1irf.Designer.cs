@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ExpenseTracker.Infrastructure.Migrations
 {
     [DbContext(typeof(ExpenseTrackerContext))]
-    [Migration("20241105150429_updatedBudgetTableDateMonth")]
-    partial class updatedBudgetTableDateMonth
+    [Migration("20241106185023_mig1irf")]
+    partial class mig1irf
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

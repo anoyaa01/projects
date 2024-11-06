@@ -12,6 +12,7 @@ namespace ExpenseTracker.Application.DTOs
             //public int WeeklyExpense { get; set; }
             public double MonthlyExpense { get; set; }
             public double YearlyExpense { get; set; }
+            public double RemainingBudget { get; set; }
         }
     
 

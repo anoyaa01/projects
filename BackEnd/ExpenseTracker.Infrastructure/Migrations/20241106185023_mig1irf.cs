@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ExpenseTracker.Infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class updatedBudgetTableDateMonth : Migration
+    public partial class mig1irf : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
