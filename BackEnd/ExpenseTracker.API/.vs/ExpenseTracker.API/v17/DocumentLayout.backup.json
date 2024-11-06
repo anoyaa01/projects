@@ -37,8 +37,7 @@
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-04T07:00:43.636Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -50,8 +49,7 @@
               "RelativeToolTip": "..\\ExpenseTracker.Application\\DTOs\\TotalExpenseDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T19:14:51.63Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T19:14:51.63Z"
             },
             {
               "$type": "Document",
@@ -76,8 +74,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T18:49:49.139Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T18:49:49.139Z"
             }
           ]
         }

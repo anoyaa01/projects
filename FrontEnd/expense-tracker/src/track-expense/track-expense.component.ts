@@ -36,7 +36,7 @@ endDate :Date=new Date();
 constructor(private expenseService: ExpenseServiceService,private UserIdService:UserIdService) { }
 
 ngOnInit(): void {
-  //this.userId=this.UserIdService.userId;
+  this.userId=this.UserIdService.userId;
  this.filter=false;
   this.expenseService.getNewExpense(this.userId).subscribe({
     next: (data) => {
