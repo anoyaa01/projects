@@ -753,3 +753,8 @@ C:\Users\Work\Desktop\ExpenseTrackerProject\BackEnd\ExpenseTracker.API\obj\Debug
 C:\Users\Work\Desktop\ExpenseTrackerProject\BackEnd\ExpenseTracker.API\obj\Debug\net8.0\ExpenseT.4CDC188D.Up2Date
 C:\Users\Work\Desktop\ExpenseTrackerProject\BackEnd\ExpenseTracker.API\obj\Debug\net8.0\ExpenseTracker.API.genruntimeconfig.cache
 C:\Users\Work\Desktop\ExpenseTrackerProject\BackEnd\ExpenseTracker.API\obj\Debug\net8.0\ref\ExpenseTracker.API.dll
+C:\Users\irfan.shakir\Desktop\ExpenseTrackerProject\BackEnd\ExpenseTracker.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\irfan.shakir\Desktop\ExpenseTrackerProject\BackEnd\ExpenseTracker.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\irfan.shakir\Desktop\ExpenseTrackerProject\BackEnd\ExpenseTracker.API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\irfan.shakir\Desktop\ExpenseTrackerProject\BackEnd\ExpenseTracker.API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\irfan.shakir\Desktop\ExpenseTrackerProject\BackEnd\ExpenseTracker.API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll

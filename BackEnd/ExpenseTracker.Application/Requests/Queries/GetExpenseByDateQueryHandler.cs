@@ -17,38 +17,27 @@ namespace ExpenseTracker.Application.Requests.Queries
 
         public GetExpenseByDateQueryHandler(ExpenseTrackerContext Context)
         {
-            _context=Context;
+            _context = Context;
         }
         public async Task<List<ExpenseDTO>> Handle(GetExpenseByDateQuery request, CancellationToken cancellationToken)
         {
-            User requiredUser =await _context.User.FirstOrDefaultAsync(x => x.Id == request.UserId);
 
-            List<ExpenseDTO> ExpenseList = new List<ExpenseDTO>();
+            var expenseList = await (from expense in _context.Expense
+                                     join category in _context.Category on expense.CategoryId equals category.Id
+                                     where expense.UserId == request.UserId
+                                           && expense.Date >= request.startDate
+                                           && expense.Date <= request.endDate
+                                     select new ExpenseDTO
+                                     {
+                                         Amount = expense.Amount,
+                                         Date = expense.Date,
+                                         Description = expense.Description,
+                                         CategoryName = category.Name,
+                                         Id = expense.Id
+                                     }).ToListAsync(cancellationToken);
 
-            var query = from expense in _context.Expense
-                        join user in _context.User on expense.UserId equals user.Id
-                        join category in _context.Category on expense.CategoryId equals category.Id
-                        where ((expense.UserId == request.UserId) && (expense.Date>=request.startDate) && (expense.Date<=request.endDate))
-                        select new
-                        {
-                            amount = expense.Amount,
-                            date = expense.Date,
-                            description = expense.Description,
-                            categoryName = category.Name,
-                            id = expense.Id,
-                        };
+            return expenseList;
 
-            foreach (var retrieverdExpense in query)
-            {
-                ExpenseDTO expenseDTO = new ExpenseDTO();
-                expenseDTO.Amount = retrieverdExpense.amount;
-                expenseDTO.Date = retrieverdExpense.date;
-                expenseDTO.Description = retrieverdExpense.description;
-                expenseDTO.CategoryName = retrieverdExpense.categoryName;
-                expenseDTO.Id = retrieverdExpense.id;
-                ExpenseList.Add(expenseDTO);
-            }
-            return await Task.FromResult(ExpenseList);
         }
     }
 }

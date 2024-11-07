@@ -7,10 +7,6 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { UserIdService } from '../user-id.service';
 
-export interface UserProfile {
-  monthlyExpense: number;
-  yearlyExpense: number;
-}
 
 interface ExpenseList {
   id:number;
@@ -18,6 +14,12 @@ interface ExpenseList {
   amount: number;
   categoryName: string;
   date: Date; 
+}
+
+interface TotalExpenseList{  /////////////changes
+  yearlyExpense: number;
+  monthlyExpense: number;
+  remainingBudget: number;
 }
 
 @Component({
@@ -37,7 +39,7 @@ today = new Date();
 startDate : Date=new Date();
 endDate :Date=new Date();
 filter: boolean=false;
-totalExpenseList: any[]=[];
+totalExpenseList: TotalExpenseList[]=[]; /////////////changes
 totalAmount:number=0;
 totalAmountFiltered:number=0; 
 monthCheck = new Date();
@@ -117,7 +119,9 @@ applyFilter()
 }
 
 
-
+removeFilter(){
+  this.filter=false   //////changes
+}
 
 onDelete(index : number) 
 {
@@ -133,6 +137,15 @@ onDelete(index : number)
       console.log(" delete successfully connected");
       this.totalAmount-=this.expenseList[index].amount;
       this.expenseList.splice(index, 1);
+      this.expenseService.getTotalExpense(this.userId).subscribe({   //////changes
+        next: (data) => {
+          console.log('initially Fetched total(yearly,weekly) expenses:', data); 
+         this.totalExpenseList = [data]; 
+        },
+        error: (error) => {
+          console.log(error);
+        }
+      })
     },
   error: (error) => {
     console.log(error);
@@ -140,7 +153,7 @@ onDelete(index : number)
 })
 }
 else{
-  console.log("DATES  : ",this.expenseList[index].date,"/////// ",this.monthCheck)
+  //console.log("DATES  : ",this.expenseList[index].date,"/////// ",this.monthCheck)
   alert("Only Previous month expense can be deleted !")
 }
 }
@@ -159,6 +172,15 @@ onFilterDelete(index : number)
       console.log(" delete successfully connected");
       this.totalAmountFiltered-=this.expenseFilterList[index].amount;
       this.expenseFilterList.splice(index, 1);
+      this.expenseService.getTotalExpense(this.userId).subscribe({   //////changes
+        next: (data) => {
+          console.log('initially Fetched total(yearly,weekly) expenses:', data); 
+         this.totalExpenseList = [data]; 
+        },
+        error: (error) => {
+          console.log(error);
+        }
+      })
     },
   error: (error) => {
     console.log(error);

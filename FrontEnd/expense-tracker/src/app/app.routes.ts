@@ -8,11 +8,11 @@ import { AddExpenseComponent } from '../add-expense/add-expense.component';
 
 export const routes: Routes =
  [
-    {path:'',component:LoginPageComponent},
     {path:'log-in',component:LoginPageComponent},
     {path: 'sign-up',component:SignupPageComponent},
     {path:'view-profile',component:ViewProfileComponent},
     {path: 'category-expense',component:CategoryExpenseComponent},
     {path: 'track-expense', component:TrackExpenseComponent},
-    {path:'add-expense', component:AddExpenseComponent}
+    {path:'add-expense', component:AddExpenseComponent},
+    {path: '', redirectTo:'log-in',pathMatch:'full'}
 ];

@@ -37,7 +37,6 @@ export class LoginPageComponent {
       this.customerService.checkUserDetails(userData).subscribe({
         next: (data) => {
           if(data!==0){
-          console.log("user id is",data);
           this.userIdService.setUserId(data);
           this.router.navigate(['/track-expense']);
           }

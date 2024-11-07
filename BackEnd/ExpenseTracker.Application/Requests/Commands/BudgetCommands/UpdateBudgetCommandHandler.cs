@@ -37,7 +37,7 @@ namespace ExpenseTracker.Application.Requests.Commands.BudgetCommands
             {
                 budget.Amount = command.Amount;
             }
-            return await _context.SaveChangesAsync();
+            return await _context.SaveChangesAsync(cancellationToken);
         }
     }
 }

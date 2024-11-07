@@ -59,7 +59,8 @@
             <label class="form-label me-2">Filter By Date Range:</label>
             <input type="date" class="form-control d-inline-block w-auto me-2" (change)="onSelectStart($event)" />
             <input type="date" class="form-control d-inline-block w-auto me-2" (change)="onSelectEnd($event)" />
-            <button class="btn btn-primary" (click)="applyFilter()">Apply</button>
+            <button class="btn btn-primary d-inline-block w-auto me-2   " (click)="applyFilter()">Apply</button>
+            <button class="btn btn-primary" (click)="removeFilter()">Remove Filter</button>
         </div>
     </div>
 

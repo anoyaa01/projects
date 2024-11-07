@@ -1,8 +1,10 @@
 ﻿using ExpenseTracker.Application.DTOs;
 using ExpenseTracker.Infrastructure.Data;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,18 +30,39 @@ namespace ExpenseTracker.Application.Requests.Queries
                                                              && b.Month.Month == DateTime.Now.Month
                                                              && b.Month.Year == DateTime.Now.Year);
 
+            //var calendar = CultureInfo.CurrentCulture.Calendar;
+            //var currentWeekOfYear = calendar.GetWeekOfYear(DateTime.Now, CalendarWeekRule.FirstDay, DayOfWeek.Monday);
+
+            //var weeklyTotal = _context.Expense
+            //    .Where(e => e.UserId == request.UserId
+            //                && e.Date.Year == DateTime.Now.Year)
+            //    .AsEnumerable() // above query processes in db
+            //    .Where(e => calendar.GetWeekOfYear(e.Date.ToDateTime(TimeOnly.MinValue), CalendarWeekRule.FirstDay, DayOfWeek.Monday) == currentWeekOfYear)
+            //    .Sum(e => e.Amount);
+
+            //var today = DateTime.Now;
+            //var startOfWeek = today.AddDays(-(int)today.DayOfWeek + (int)DayOfWeek.Monday);
+            //var endOfWeek = startOfWeek.AddDays(6); // End of week is Sunday      /////changess
+
+            //var weeklyTotal = _context.Expense
+            //    .Where(e => e.UserId == request.UserId
+            //                && e.Date >= DateOnly.FromDateTime(startOfWeek)
+            //                && e.Date <= DateOnly.FromDateTime(endOfWeek))
+            //    .Sum(e => e.Amount);
+
+
             double remainingBudget = 0;
             if (monthlyBudget != null)
             {
-                 remainingBudget = monthlyBudget.Amount - monthlyTotal;
+                remainingBudget = monthlyBudget.Amount - monthlyTotal;
             }
-            
+
 
             TotalExpenseDTO totalExpenseDTO = new();
             totalExpenseDTO.YearlyExpense = yearlyTotal;
             totalExpenseDTO.MonthlyExpense = monthlyTotal;
             totalExpenseDTO.RemainingBudget = remainingBudget;
-            return await Task.FromResult(totalExpenseDTO);
+            return totalExpenseDTO;
         }
     }
 
