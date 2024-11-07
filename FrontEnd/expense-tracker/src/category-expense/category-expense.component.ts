@@ -36,6 +36,9 @@ export class CategoryExpenseComponent  {
       next: (data) => {
         this.categoryList = data; 
         console.log('Fetched categories:',this.categoryList);
+        if(this.categoryList.length==0){
+          alert("No expenses in Current Month.")
+        }
         this.createChart();
       },
       error: (error) => {

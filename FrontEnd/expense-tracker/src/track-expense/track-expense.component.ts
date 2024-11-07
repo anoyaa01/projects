@@ -40,10 +40,13 @@ filter: boolean=false;
 totalExpenseList: any[]=[];
 totalAmount:number=0;
 totalAmountFiltered:number=0; 
+monthCheck = new Date();
 
 constructor(private expenseService: ExpenseServiceService,private UserIdService:UserIdService) { }
 
 ngOnInit(): void {
+  this.monthCheck.setDate(this.today.getDate() - 30);
+  this.monthCheck.setHours(0, 0, 0, 0);
   this.userId=this.UserIdService.userId;
  this.filter=false;
   this.expenseService.getNewExpense(this.userId).subscribe({
@@ -118,12 +121,17 @@ applyFilter()
 
 onDelete(index : number) 
 {
+  const expenseDate = new Date(this.expenseList[index].date);
+  expenseDate.setHours(0, 0, 0, 0);
+  if(expenseDate > this.monthCheck)
+{
  alert("Your selected expense is getting Deleted !!");
  console.log(this.expenseList[index].id);
   this.expenseService.removeExpense(this.userId,this.expenseList[index].id).subscribe({
     next:()=>
     {
       console.log(" delete successfully connected");
+      this.totalAmount-=this.expenseList[index].amount;
       this.expenseList.splice(index, 1);
     },
   error: (error) => {
@@ -131,16 +139,25 @@ onDelete(index : number)
   }
 })
 }
-
+else{
+  console.log("DATES  : ",this.expenseList[index].date,"/////// ",this.monthCheck)
+  alert("Only Previous month expense can be deleted !")
+}
+}
 
 onFilterDelete(index : number) 
 {
+  const expenseDate = new Date(this.expenseList[index].date);
+  expenseDate.setHours(0, 0, 0, 0);
+  if(expenseDate > this.monthCheck)
+  {
  alert("Your selected expense is getting Deleted !!");
  console.log(this.expenseFilterList[index].id);
   this.expenseService.removeExpense(this.userId,this.expenseFilterList[index].id).subscribe({
     next:()=>
     {
       console.log(" delete successfully connected");
+      this.totalAmountFiltered-=this.expenseFilterList[index].amount;
       this.expenseFilterList.splice(index, 1);
     },
   error: (error) => {
@@ -148,7 +165,10 @@ onFilterDelete(index : number)
   }
 })
 }
-
+else{
+  alert("Only Previous month expense can be deleted !")
+}
+}
 }
 
 
