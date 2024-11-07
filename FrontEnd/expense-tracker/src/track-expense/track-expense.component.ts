@@ -42,6 +42,7 @@ ngOnInit(): void {
     next: (data) => {
       console.log('initially Fetched expenses:', data); 
       this.expenseList = data; 
+  
     },
     error: (error) => {
       console.log(error);
@@ -66,8 +67,8 @@ onSelectStart(event:Event)
     const selectedStartDate = inputStartDate.value;
     const selectedStartDateObj = new Date(selectedStartDate);
 
-    if (selectedStartDateObj > this.today) {
-      alert("Select current date or a past date !!");
+    if (selectedStartDateObj> this.today) {
+      alert("Select current date or a past date!!");
     }
     this.startDate=selectedStartDateObj;
 

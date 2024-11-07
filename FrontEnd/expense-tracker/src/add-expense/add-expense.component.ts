@@ -10,7 +10,7 @@ import { UserIdService } from '../user-id.service';
 @Component({
   selector: 'app-add-expense',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule,RouterModule,FormsModule],
+  imports: [CommonModule, ReactiveFormsModule, RouterModule, FormsModule],
   templateUrl: './add-expense.component.html',
   styleUrl: './add-expense.component.scss'
 })
@@ -18,14 +18,14 @@ export class AddExpenseComponent {
 
   expenseSubmitted: boolean = false;
   addExpenseDetails!: FormGroup<IExpenseInterface>;
-  addCategoryFlag=false;
-  categoryName!:string;
-  categoryList:{name:string}[] = [];  
+  addCategoryFlag = false;
+  categoryName!: string;
+  categoryList: { name: string }[] = [];
   userId: number = 1;
   Today: Date = new Date();
   form: any;
 
-  constructor(private expenseService: ExpenseServiceService, private categoryService: CategoryServiceService,private UserIdService:UserIdService) { }
+  constructor(private expenseService: ExpenseServiceService, private categoryService: CategoryServiceService, private UserIdService: UserIdService) { }
 
   onChange(event: Event) {
 
@@ -33,15 +33,17 @@ export class AddExpenseComponent {
     const selectedDate = input.value;
     const selectedDateObj = new Date(selectedDate);
     const today = new Date();
+    const oneMonthAgo = new Date(today);
+    oneMonthAgo.setMonth(today.getMonth() - 1);
 
-    if (selectedDateObj > today) {
-      alert("Select current date or a past date !!");  
+    if (selectedDateObj > today || selectedDateObj < oneMonthAgo) {
+      alert("Please select a date within the last month, up to today.");
       this.addExpenseDetails.reset();
     }
-  }  
+  }
 
   ngOnInit(): void {
-    this.userId=this.UserIdService.userId;
+    this.userId = this.UserIdService.userId;
     this.addExpenseDetails = new FormGroup<IExpenseInterface>
       ({
         Date: new FormControl(null, Validators.required),
@@ -64,21 +66,21 @@ export class AddExpenseComponent {
 
   addExpense() {
     this.expenseSubmitted = true;
-   
+
     if (this.addExpenseDetails.valid) {
       const newExpense =
       {
         Amount: this.addExpenseDetails.value.Amount,
         Description: this.addExpenseDetails.value.Description,
         CategoryName: this.addExpenseDetails.value.Category,
-        Date:this.addExpenseDetails.value.Date,
+        Date: this.addExpenseDetails.value.Date,
         UserId: this.userId
       }
       this.expenseService.submitNewExpense(newExpense);
       this.addExpenseDetails.reset();
     }
   }
-  addCategory(){
+  addCategory() {
     const postedCategory = {
       userId: this.userId,
       name: this.categoryName
@@ -86,7 +88,7 @@ export class AddExpenseComponent {
     this.categoryService.addNewCategory(postedCategory).subscribe({
       next: (response) => {
         this.addCategoryFlag = false;
-        this.categoryList.push({name : postedCategory.name})
+        this.categoryList.push({ name: postedCategory.name })
         alert("New category added!");
       },
       error: (error) => {

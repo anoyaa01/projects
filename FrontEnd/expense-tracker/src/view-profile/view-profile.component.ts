@@ -45,6 +45,7 @@ export class ViewProfileComponent {
   }
 
   onConfirm() {
+    this.update=false;
     this.profile.updateBudgetService(this.id,this.amount).subscribe({
       next: (data) => {
         console.log('Fetched expenses budget update:', data);

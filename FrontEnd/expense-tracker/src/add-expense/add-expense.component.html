@@ -2,10 +2,10 @@
 <div class=" nav-color ">
     <ul class="nav nav-tabs ">
         <li class="mx-3 nav-item">
-            <a class="nav-link active" [routerLink]="['/track-expense']">Track Expense</a>
+            <a class="nav-link " [routerLink]="['/track-expense']">Track Expense</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/add-expense']">Add Expense</a>
+            <a class="nav-link active" [routerLink]="['/add-expense']">Add Expense</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" [routerLink]="['/category-expense']">Category Expense</a>
@@ -17,7 +17,7 @@
 </div>
 <body class="d-flex bg-color justify-content-center">
     <div class="justify-content-center heightss py-5 mb-6">
-        <form [formGroup]="addExpenseDetails" class="form-group">
+        <form [formGroup]="addExpenseDetails" class="form-group bg-white  form-width mb-3">
 
             <div class="col-12 mb-5">
                 <h2>Add Expense</h2>

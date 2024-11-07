@@ -15,6 +15,7 @@
         </li>
     </ul>
 </div>
+
 <body class=" bg-color p-4">
     <!-- Expense Summary Cards -->
     <div class="row mb-4">
@@ -43,7 +44,10 @@
                 <div class="card-body">
                     <h5 class="card-title">Monthly Budget Remaining</h5>
                     <p class="card-text text-muted">Amount:</p>
-                    <a class="btn btn-primary">{{ amount.remainingBudget | currency: 'INR' }}</a>
+                    <a class="btn btn-primary" *ngIf="amount.remainingBudget>0 || amount.remainingBudget==0">{{
+                        amount.remainingBudget | currency: 'INR' }}</a>
+                    <a class="btn btn-danger" *ngIf="amount.remainingBudget<0">{{ amount.remainingBudget | currency:
+                        'INR' }}</a>
                 </div>
             </div>
         </div>
@@ -60,7 +64,8 @@
     </div>
 
     <!-- Expense List -->
-    <ul class="list-group">
+    <ul class="list-group" *ngIf="!filter" class="list-group mt-3">
+       <p><b>Total number of records:  </b>{{expenseList.length}}</p> 
         <li *ngFor="let expense of expenseList; index as i"
             class="list-group-item d-flex justify-content-between align-items-center mb-2 shadow-sm">
             <!-- Expense Details Section -->
@@ -79,12 +84,13 @@
 
     <!-- Filtered Expense List -->
     <ul *ngIf="filter" class="list-group mt-3">
+        <p><b>Total number of records":  </b>{{expenseFilterList.length}}</p> 
         <li *ngFor="let expenseFilter of expenseFilterList; index as i"
             class="list-group-item d-flex justify-content-between align-items-start mb-2 shadow-sm">
             <div class="ms-2 me-auto">
                 <h5 class="fw-bold mb-1">{{ expenseFilter.description }}</h5>
                 <p class="mb-0">
-                    <span class="text-muted">Amount:</span> Rs.{{ expenseFilter.amount }}
+                    <span class="text-muted">Amount:</span> {{ expenseFilter.amount| currency: 'INR' }}
                     <span class="text-muted ms-3">Category:</span> {{ expenseFilter.categoryName }}
                     <span class="text-muted ms-3">Date:</span> {{ expenseFilter.date | date }}
                 </p>

@@ -17,24 +17,18 @@ namespace ExpenseTracker.Application.Requests.Queries
             public async Task<List<CategoryExpenditureDTO>> Handle(GetExpenditureByCategoryOuery request, CancellationToken cancellationToken)
             {
 
-                var categoryExpenditures = await _context.Category
-                    .Where(c => c.UserId == request.UserId || c.InBuilt)
-                    .Select(c => new
-                    {
-                        Name = c.Name,
-                        TotalExpense = _context.Expense
-                            .Where(e => e.CategoryId == c.Id)
-                            .Sum(e => (double?)e.Amount) ?? 0
-                    })
-                    .Where(c => c.TotalExpense > 0) // non-zero filter
-                    .Select(x => new CategoryExpenditureDTO
-                    {
-                        Name = x.Name,
-                        Expenditure = x.TotalExpense
-                    })
-                    .ToListAsync(cancellationToken);
+            var categoryExpenditures = await _context.Expense
+                .Where(e => e.UserId == request.UserId && e.Date.Month == DateTime.Now.Month)
+                .GroupBy(e => e.Category.Name)
+                .Select(g => new CategoryExpenditureDTO
+                {
+                 Name = g.Key,
+                 Expenditure = g.Sum(e => e.Amount)
+                })
+                .Where(dto => dto.Expenditure > 0)
+                .ToListAsync(cancellationToken);
 
-                return categoryExpenditures;
+            return categoryExpenditures;
             }
         }
  }
