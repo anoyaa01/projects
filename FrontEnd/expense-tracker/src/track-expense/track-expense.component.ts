@@ -10,7 +10,14 @@ import { UserIdService } from '../user-id.service';
 export interface UserProfile {
   monthlyExpense: number;
   yearlyExpense: number;
+}
 
+interface ExpenseList {
+  id:number;
+  description: string;
+  amount: number;
+  categoryName: string;
+  date: Date; 
 }
 
 @Component({
@@ -23,15 +30,16 @@ export interface UserProfile {
 
 export class TrackExpenseComponent {
 
-expenseList:any[]=[];
-expenseFilterList:any[]=[];
+expenseList:ExpenseList[]=[];
+expenseFilterList:ExpenseList[]=[];
 userId:number=1;
 today = new Date();
 startDate : Date=new Date();
 endDate :Date=new Date();
-  filter: boolean=false;
-  totalExpenseList: any[]=[];
- 
+filter: boolean=false;
+totalExpenseList: any[]=[];
+totalAmount:number=0;
+totalAmountFiltered:number=0; 
 
 constructor(private expenseService: ExpenseServiceService,private UserIdService:UserIdService) { }
 
@@ -42,7 +50,8 @@ ngOnInit(): void {
     next: (data) => {
       console.log('initially Fetched expenses:', data); 
       this.expenseList = data; 
-  
+      this.totalAmount = this.expenseList.reduce((sum, expense) => sum + expense.amount, 0);
+
     },
     error: (error) => {
       console.log(error);
@@ -94,9 +103,9 @@ applyFilter()
   this.expenseService.getFilterExpense(this.userId,this.startDate,this.endDate).subscribe({
   next: (data) => {
     console.log(this.userId,this.startDate,this.endDate);
-
     console.log('Fetched expenses after filter:', data); 
     this.expenseFilterList = data; 
+    this.totalAmountFiltered = this.expenseFilterList.reduce((sum, expense) => sum + expense.amount, 0);
   },
   error: (error) => {
     console.log(error);
